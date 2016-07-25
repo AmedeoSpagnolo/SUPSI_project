@@ -1,0 +1,513 @@
+---
+countries:
+  Capricorn:
+    - place: Alaska
+      date: January 3
+    - place: Albania
+      date: January 11
+    - place: Australia
+      date: January 1
+    - place: Burma
+      date: January 4
+    - place: Cameroon
+      date: January 1
+    - place: Cuba
+      date: January 1
+    - place: El Salvador
+      date: January 1
+    - place: Haiti
+      date: January 1
+    - place: Indonesia
+      date: December 28
+    - place: Libya
+      date: December 24
+    - place: Poland
+      date: January 19
+    - place: Romania
+      date: December 30
+    - place: Samoa
+      date: January 1
+    - place: Sudan
+      date: January 1
+    - place: United Kingdom
+      date: January 1
+  Aquarius:
+    - place: Gambia
+      date: February 18
+    - place: Greece
+      date: February 3
+    - place: Grenada
+      date: February 7
+    - place: Iran
+      date: February 11
+    - place: Liechenstein
+      date: January 23
+    - place: Nauru
+      date: January 31
+    - place: Nepal
+      date: February 18
+    - place: New Zealand
+      date: February 6
+    - place: Sri Lanka
+      date: February 4
+    - place: Vatican
+      date: February 11
+    - place: Yugoslavia
+      date: January 31
+  Pisces:
+    - place: Taiwan
+      date: March 1
+    - place: Ghana
+      date: March 6
+    - place: Martinique
+      date: March 19
+    - place: Mauritius
+      date: March 12
+    - place: Monaco
+      date: February 21
+    - place: Morocco
+      date: March 2
+    - place: Netherlands
+      date: March 16
+    - place: St. Lucia
+      date: February 22
+  Aries:
+    - place: Cambodia
+      date: April 17
+    - place: Ethiopia
+      date: March 21
+    - place: Guatemala
+      date: April 17
+    - place: Ireland
+      date: April 18
+    - place: Luxembourg
+      date: April 19
+    - place: Spain
+      date: April 1
+    - place: Zimbabwe
+      date: April 18
+  Gemini:
+    - place: Denmark 
+      date: June 5
+    - place: Egypt 
+      date: June 18
+    - place: Guyana 
+      date: May 25
+    - place: Iceland 
+      date: June 17
+    - place: Italy 
+      date: June 10
+    - place: Jordan 
+      date: May 25
+    - place: Kuwait 
+      date: June 19
+    - place: Norway 
+      date: June 7
+    - place: Sweden 
+      date: June 6
+    - place: Tonga 
+      date: June 4
+  Taurus:
+    - place: Austria 
+      date: May 15
+    - place: Ecuador 
+      date: May 13
+    - place: Israel 
+      date: May 14
+    - place: Japan 
+      date: April 28
+    - place: Paraguay 
+      date: May 14
+    - place: Sierra Leone 
+      date: April 27
+    - place: Tanzania 
+      date: April 26
+    - place: Togo 
+      date: April 27
+  Cancer:
+    - place: Afghanistan
+      date: July 17
+    - place: Algeria
+      date: July 5
+    - place: Argentina
+      date: July 9
+    - place: Bahamas
+      date: July 10
+    - place: Burundi
+      date: July 2
+    - place: Canada
+      date: July 1
+    - place: Cape Verde
+      date: July 5
+    - place: Comoros
+      date: July 6
+    - place: Czechoslovakia
+      date: July 11
+    - place: Djibouti
+      date: June 27
+    - place: Iraq
+      date: July 14
+    - place: Kiribati
+      date: July 12
+    - place: Madagascar
+      date: June 27
+    - place: Malawi
+      date: July 6
+    - place: Mozambique
+      date: June 25
+    - place: New Zealand
+      date: February 6
+    - place: Oman
+      date: July 23
+    - place: Phillipines
+      date: July 4
+    - place: Rwanda
+      date: July 1
+    - place: Sao Tome
+      date: July 12
+    - place: Seychelles
+      date: June 29
+    - place: Solomon Islands
+      date: July 7
+    - place: Somalia
+      date: July 1
+    - place: Thailand
+      date: June 24
+    - place: U.S.A.
+      date: July 4
+    - place: Vietnam
+      date: July 2
+    - place: Zaire
+      date: June 30
+  Leo:
+    - place: Bahrain
+      date: August 14
+    - place: Benin
+      date: August 1
+    - place: Bermuda
+      date: August 7
+    - place: Bhutan
+      date: August 8
+    - place: Bolivia
+      date: August 6
+    - place: Central African Republic
+      date: August 13
+    - place: Chad
+      date: August 11
+    - place: Colombia
+      date: August 7
+    - place: Congo
+      date: August 15
+    - place: Cyprus
+      date: August 16
+    - place: Gabon
+      date: August 17
+    - place: Hawaii
+      date: August 21
+    - place: Hungary
+      date: August 18
+    - place: India
+      date: August 15
+    - place: Ivory Coast
+      date: August 7
+    - place: Jamaica
+      date: August 6
+    - place: Puerto Rico
+      date: July 25
+    - place: South Korea
+      date: August 15
+    - place: Liberia
+      date: July 26
+    - place: Maldives
+      date: July 26
+    - place: Niger
+      date: August 3
+    - place: Pakistan
+      date: August 15
+    - place: Peru
+      date: July 28
+    - place: Senegal
+      date: August 20
+    - place: Singapore
+      date: August 9
+    - place: Tunisia
+      date: July 25
+    - place: Upper Volta
+      date: August 5
+    - place: Vanuatu
+      date: July 30
+  Virgo:
+    - place: Belize
+      date: September 21
+    - place: Bulgaria
+      date: September 15
+    - place: Chile
+      date: September 18
+    - place: Costa Rica
+      date: September 15
+    - place: North Korea
+      date: September 9
+    - place: Malaysia
+      date: September 16
+    - place: Mali
+      date: September 22
+    - place: Malta
+      date: September 21
+    - place: Mexico
+      date: September 16
+    - place: Papua New Guinea
+      date: September 16
+    - place: Oatar
+      date: September 1
+    - place: St.Christopher-Nevis
+      date: September 19
+    - place: Switzerland
+      date: September 12
+    - place: Trinidad & Tobago
+      date: August 31
+    - place: Uruguay
+      date: August 25
+    - place: Venda
+      date: September 13
+  Libra:
+    - place: Botswana
+      date: September 30
+    - place: Germany
+      date: October 3
+    - place: China
+      date: October 1
+    - place: Fiji
+      date: October 10
+    - place: France
+      date: October 6
+    - place: Guinea
+      date: October 2
+    - place: Lesotho
+      date: October 4
+    - place: Nicaragua
+      date: September 28
+    - place: Nigeria
+      date: October 1
+    - place: Portugal
+      date: October 5
+    - place: Saudi Arabia
+      date: September 23
+    - place: Swaziland
+      date: September 26
+    - place: Syria
+      date: September 29
+    - place: Tuvalu
+      date: September 30
+    - place: Uganda
+      date: October 9
+    - place: Yemen Arab Republic
+      date: September 27
+  Scorpio:
+    - place: Angola
+      date: November 11
+    - place: Antigua and Barbuda
+      date: November 1
+    - place: Belgium
+      date: November 18
+    - place: Brazil
+      date: November 15
+    - place: Dominica
+      date: November 3
+    - place: Dominican Republic
+      date: November 6
+    - place: Equat.Guinea
+      date: November 12
+    - place: Honduras
+      date: November 5
+    - place: Panama
+      date: November 3
+    - place: St.Vincent & the Grenadines
+      date: October 26
+    - place: South Africa
+      date: October 31
+    - place: Transkei
+      date: October 26
+    - place: Turkey
+      date: October 29
+    - place: Zambia
+      date: October 24
+  Sagittarius:
+    - place: Bangladesh
+      date: December 16
+    - place: Barbados
+      date: November 30
+    - place: Ciskei
+      date: December 4
+    - place: Finland
+      date: December 6
+    - place: Kenya
+      date: December 12
+    - place: Laos
+      date: December 3
+    - place: Lebanon
+      date: November 26
+    - place: Mauritania
+      date: November 28
+    - place: Mongolia
+      date: November 26
+    - place: Surinam
+      date: November 25
+    - place: United Arab Emirates
+      date: December 2
+    - place: Venezuela
+      date: December 8
+    - place: Yemen
+      date: November 30
+
+cities:
+  Aries:
+    - place: Guadalajara 
+      date: March 29
+    - place: Mexico
+      date: March 29
+    - place: San Salvador 
+      date: April 1
+    - place: El Salvador
+      date: April 1
+  Taurus:
+    - place: Brasilia
+      date: April 21
+    - place: Brazil 
+      date: April 21
+    - place: Managua
+      date: April 30
+    - place: Nicaragua 
+      date: April 30
+    - place: Veracruz
+      date: April 22
+    - place: Mexico 
+      date: April 22
+  Gemini:
+    - place: Anchorage
+      date: June 7
+    - place: Alaska
+      date: June 7
+  Cancer:
+    - place: Acapulco
+      date: June 30
+    - place: Mexico 
+      date: June 30
+    - place: Kingston
+      date: June 24
+    - place: Jamaica 
+      date: June 24
+    - place: Mexico city 
+      date: July 18
+    - place: Nassau
+      date: June 29
+    - place: Bahamas 
+      date: June 29
+  Leo:
+    - place: Bogota
+      date: August 6
+    - place: Columbia
+      date: August 6
+    - place: Cali
+      date: July 25
+    - place: Caracas
+      date: July 25
+    - place: Havana
+      date: July 25
+    - place: Columbia
+      date: July 25
+    - place: Venezuela
+      date: July 25
+    - place: Cuba
+      date: July 25
+    - place: Santo Domingo
+      date: August 4
+  Virgo:
+    - place: Asuncion
+      date: August 15
+    - place: Monterrey
+      date: September 20
+    - place: Port of Spain
+      date: August 21
+    - place: Quito
+      date: August 28
+    - place: Belize
+      date: September 20
+    - place: Paraguay
+      date: August 15
+    - place: Mexico
+      date: September 20
+    - place: rinidad & Tobago
+      date: August 21
+    - place: Ecuador
+      date: August 28
+    - place: Belize
+      date: September 20
+    - place: Panama City
+      date: August 15
+  Scorpio:
+    - place: La Paz
+      date: Oct 20
+    - place: Porto Alegre
+      date: November 5
+    - place: San Juan
+      date: November 16
+    - place: Bolivia
+      date: Oct20
+    - place: Brazil
+      date: November 5
+    - place: Puerto Rico
+      date: November 16
+  Sagittarius:
+    - place: Belo Horizonte
+      date: December 17
+    - place: Honolulu
+      date: November 21
+    - place: Brazil
+      date: December 17
+    - place: Hawaii
+      date: November 21
+  Capricorn:
+    - place: Guatemala city
+      date: January 1
+    - place: Montevideo
+      date: December 24
+    - place: Uruguay
+      date: December 24
+  Aquarius:
+    - place: Buenos Aires
+      date: February 2
+    - place: Lima
+      date: January 18
+    - place: Santiago
+      date: February 12
+    - place: Sao Paolo
+      date: January 25
+    - place: Argentina
+      date: February 2
+    - place: Peru
+      date: January 18
+    - place: Chile
+      date: February 12
+    - place: Brazil
+      date: January 25
+  Pisces:
+    - place: Georgetown
+      date: March 1
+    - place: Porte au Prince
+      date: March 9
+    - place:  Recife
+      date: March 12
+    - place: Rio De Janeiro
+      date: March 1
+    - place: San Jose
+      date: March 19
+    - place: Guyana
+      date: March 1
+    - place: Haiti
+      date: March 9
+    - place: Brazil
+      date: March 12
+    - place: Brazil
+      date: March 1
+    - place: Costa Rica
+      date: March 19
