@@ -1,0 +1,49 @@
+=unlisted
+  list-style: none
+  margin: 0
+  padding: 0
+
+=background-size-cover($image)
+  background: url($image) no-repeat center center
+  background-size: cover
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$image}', sizingMethod='scale')
+  -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$image}', sizingMethod='scale')
+
+@function image-url($image)
+  @return url(#{$image-path}#{$image})
+
+
+=button-box ($bgcolor, $textcolor, $bordercolor, $hbgcolor, $htextcolor, $hbordercolor)
+  text-transform: uppercase
+  border: solid 1px $bordercolor
+  cursor: pointer
+  font-size: 100%
+  color: $textcolor
+  background-color: $bgcolor
+  outline: none
+  text-shadow: none
+  text-decoration: none
+  transition: color 0.2s, background-color .2s
+  font-family: inherit
+  letter-spacing: 1px
+  padding: 8px 1.1rem 7px 1.1rem
+  margin: .5rem 0
+  @media (min-width: $break-large)
+    font-size: 120%
+    padding: 8px 1.1rem 7px 1.1rem
+  &:hover
+    color: $htextcolor
+    background-color: $hbgcolor
+    border: solid 1px $hbordercolor
+    @media (min-width: $break-large)
+      background-color: $hbgcolor
+  &:active
+    position: relative
+    top: 1px
+    text-decoration: none
+    background-color: inherit
+    @media (min-width: $break-large)
+      background-color: $hbgcolor
+
+
+

@@ -1,0 +1,60 @@
+[layout], [column], [row]
+	box-sizing: border-box
+	display: flex
+
+[layout=column], [column]
+	flex-direction: column
+
+[layout=row], [row]
+	flex-direction: row
+
+[layout-wrap], [wrap]
+	flex-wrap: wrap
+
+[flex]
+	flex: 1
+
+[layout-align="center"], [center],
+[layout-align="center center"], [center-center],
+[layout-align="center start"], [center-start],
+[layout-align="center end"], [center-end]
+	justify-content: center
+
+[layout-align="end"], [end],
+[layout-align="end center"], [end-center],
+[layout-align="end start"], [end-start],
+[layout-align="end end"], [end-end]
+	justify-content: flex-end
+
+[layout-align="space-around"], [around],
+[layout-align="space-around center"], [around-center],
+[layout-align="space-around start"], [around-start],
+[layout-align="space-around end"], [around-end]
+	justify-content: space-around
+
+[layout-align="space-between"], [between],
+[layout-align="space-between center"], [between-center],
+[layout-align="space-between start"], [between-start],
+[layout-align="space-between end"], [between-end]
+	justify-content: space-between
+
+[layout-align="center center"], [center-center],
+[layout-align="start center"], [start-center],
+[layout-align="end center"], [end-center],
+[layout-align="space-between center"], [between-center],
+[layout-align="space-around center"], [around-center]
+	align-items: center
+
+[layout-align="center start"], [center-start],
+[layout-align="start start"], [start-start],
+[layout-align="end start"], [end-start],
+[layout-align="space-between start"], [between-start],
+[layout-align="space-around start"], [around-start]
+	align-items: flex-start
+
+[layout-align="center end"], [center-end],
+[layout-align="start end"], [start-end],
+[layout-align="end end"], [end-end],
+[layout-align="space-between end"], [between-end],
+[layout-align="space-around end"], [around-end]
+	align-items: flex-end

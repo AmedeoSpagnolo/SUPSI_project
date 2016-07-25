@@ -1,0 +1,39 @@
+
+<div column center-center wide wrap>
+
+  <!-- translation -->
+  <%= t(:hello) %><br>
+
+  <!-- lang location -->
+  <%= I18n.locale %>
+
+  <!-- variable link -->
+	<%= link_to 'about', "/#{I18n.locale}/about"%>
+  
+  <!-- link -->
+  <%= link_to 'it', "/it", :class => 'link'%>
+
+	<!-- load data -->
+	<% data.object.each do |key, value|%>
+		<%= key %>
+		<% value.each do |k, v| %>
+			<%= "#{k} = #{v}" %>
+		<% end %>
+	<% end %>
+
+	<!-- load csv data -->
+	<% thought = csv_data('thought.csv') %>
+	
+	<!-- load json data -->
+	<%= data.people.kwan.age %>
+
+	<!-- load partial -->
+	<%= partial "button", :locals => { :text => "send", :myclass => "button_red"} %>
+	
+	<!-- load svg -->
+	<%= load_svg('logo') %>
+	
+</div>
+
+
+

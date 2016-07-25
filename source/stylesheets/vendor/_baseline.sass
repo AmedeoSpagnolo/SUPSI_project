@@ -1,0 +1,42 @@
+// https://gist.github.com/polarblau/5901522
+
+// set base font size if not set
+// normalize.css standard value
+$base-font-size: 16px !default
+
+// define scope font size to make it available globally
+$__scope: $base-font-size
+
+@function relative($arguments)
+  // ensure that the scope size is set
+  $__scope: $base-font-size !default
+
+  // prepare empty list for output
+  $converted: ()
+
+  // convert arguments to list
+  $params: ($arguments)
+
+  // iterate over arguments and convert
+  // via scope if arguments is a pixel value
+  @each $param in $params
+    @if type-of($param) == 'number' and unit($param) == 'px'
+      $converted: append($converted, em($param, $__scope))
+    @else
+      $converted: append($converted, $param)
+
+  // return the converted list
+  @return $converted
+
+=with-font-size($value: $base-font-size, $base: $base-font-size)
+  // set scope font size
+  $__scope: $value
+
+  // convert font-size relative to base font size
+  font-size: em($value, $base)
+
+  // yield to block
+  @content
+
+  // reset scope font size
+  $__scope: $base-font-size

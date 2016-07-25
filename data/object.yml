@@ -1,0 +1,7 @@
+---
+torch:
+  price: 40
+  valute: "$"
+computer: 
+  price: 2000
+  valute: "euro"

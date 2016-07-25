@@ -1,0 +1,10 @@
+{
+	"amedeo": {
+		"age": 28,
+		"nationality": "italy" 
+	},
+	"kwan": {
+		"age": 21,
+		"nationality": "hong kong" 
+	}
+}
