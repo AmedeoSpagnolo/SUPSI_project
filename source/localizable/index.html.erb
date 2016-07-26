@@ -1,14 +1,15 @@
 <div class="home" column center-center>
   <div class="wrap">
     <div class="lable" center center-center>
-      <div row center-center>
-        Hi, insert your&nbsp
-        <div class="birth_input" id="sign">sign</div>
+      <div>
+        <span>Countries doesn't define identity any more, stars do.<br>My star sign is</span>
+        <span class="birth_input" id="sign">your start sign</span>
       </div>
       <div class="oroscope" id="oroscope">
+        <span>you believe a place that ..</span>
         <div id="oroscope_content"></div>
         <span class="link_to_map">
-          <%= link_to 'see it in the map', "/#{I18n.locale}/worldmap" %>
+          <%= link_to 'check out your place on the map', "/#{I18n.locale}/worldmap" %>
           </span>
       </div>
     </div>
