@@ -1,10 +1,15 @@
 <div class="home" column center-center>
   <div class="wrap">
-    <div class="lable" row center-center>
-      Hi, insert your&nbsp
-      <div class="birth_input" id="sign">sign</div>
+    <div class="lable" center center-center>
+      <div row center-center>
+        Hi, insert your&nbsp
+        <div class="birth_input" id="sign">sign</div>
+      </div>
       <div class="oroscope" id="oroscope">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, dolorem quia? Fugiat vel, at. Laboriosam, minus officiis blanditiis dolores dicta ad unde reiciendis optio tenetur ipsam, dolor, quidem odit corporis.
+        <span class="link_to_map">
+          <%= link_to 'see it in the map', "/#{I18n.locale}/worldmap" %>
+          </span>
       </div>
     </div>
   </div>
