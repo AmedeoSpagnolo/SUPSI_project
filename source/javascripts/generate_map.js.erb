@@ -4,6 +4,7 @@ $( document ).ready(function() {
   // fake dataset
   //
   var dataset = createdataset(color_virgo_countries())
+  // var dataset = color_with_fake_data()
 
   // 
   // render map
@@ -31,34 +32,132 @@ $( document ).ready(function() {
               '<strong>', geo.properties.name, '</strong>',
               '<br>Count: <strong>', data.numberOfThings, '</strong>',
               '</div>'].join('');
-      }
+      },
+      fills: {
+          defaultFill: '#f0af0a',
+          lt50: 'rgba(0,244,244,0.9)',
+          gt50: 'red'
+        },
+        
+        data: {
+          USA: {fillKey: 'lt50' },
+          RUS: {fillKey: 'lt50' },
+          CAN: {fillKey: 'lt50' },
+          BRA: {fillKey: 'gt50' },
+          ARG: {fillKey: 'gt50'},
+          COL: {fillKey: 'gt50' },
+          AUS: {fillKey: 'gt50' },
+          ZAF: {fillKey: 'gt50' },
+          MAD: {fillKey: 'gt50' }       
+        }
     }
   })
 
 
-})
+  datamap.addPlugin('pins', function ( layer, data, options ) {  
+    var self = this,
+        fillData = this.options.fills,
+        svg = this.svg;
 
+    if ( !data || (data && !data.slice) ) {
+      throw "Datamaps Error - bubbles must be an array";
+    }
+
+    var bubbles = layer.selectAll('image.datamaps-pins').data( data, JSON.stringify );
+
+    bubbles
+      .enter()
+        .append('image')
+        .attr('class', 'datamaps-pin')
+        .attr('xlink:href', 'http://a.tiles.mapbox.com/v3/marker/pin-m+7e7e7e@2x.png')
+        .attr('height', 40)
+        .attr('width', 40)
+        .attr('id', self.id)
+        .attr('x', function ( datum ) {
+          console.log('hey')
+          var latLng;
+          if ( datumHasCoords(datum) ) {
+            latLng = self.latLngToXY(datum.latitude, datum.longitude);
+          }
+          else if ( datum.centered ) {
+            latLng = self.path.centroid(svg.select('path.' + datum.centered).data()[0]);
+          }
+          if ( latLng ) return latLng[0];
+        })
+        .attr('y', function ( datum ) {
+          var latLng;
+          if ( datumHasCoords(datum) ) {
+            latLng = self.latLngToXY(datum.latitude, datum.longitude);
+          }
+          else if ( datum.centered ) {
+            latLng = self.path.centroid(svg.select('path.' + datum.centered).data()[0]);
+          }
+          if ( latLng ) return latLng[1];;
+        })
+
+        .on('mouseover', function ( datum ) {
+          console.log('mousover!');
+          var $this = d3.select(this);
+
+          if (options.popupOnHover) {
+            console.log('going', datum)
+            self.updatePopup($this, datum, options, svg);
+          }
+        })
+        .on('mouseout', function ( datum ) {
+          var $this = d3.select(this);
+
+          if (options.highlightOnHover) {
+            //reapply previous attributes
+            var previousAttributes = JSON.parse( $this.attr('data-previousAttributes') );
+            for ( var attr in previousAttributes ) {
+              $this.style(attr, previousAttributes[attr]);
+            }
+          }
+
+          d3.selectAll('.datamaps-hoverover').style('display', 'none');
+        })
+
+
+
+    bubbles.exit()
+      .transition()
+        .delay(options.exitDelay)
+        .attr("height", 0)
+        .remove();
+
+    function datumHasCoords (datum) {
+      return typeof datum !== 'undefined' && typeof datum.latitude !== 'undefined' && typeof datum.longitude !== 'undefined';
+    }
+      
+    });
+       
+      
+       //bubbles, custom popup on hover template
+     datamap.pins([
+       {name: 'USA', latitude: 45.69, longitude: -112.49, radius: 10, fillKey: 'gt50'},
+       {name: 'Chilly', latitude: -25.32, longitude: 120.32, radius: 18, fillKey: 'lt50'},
+       {name: 'Hot again', latitude: 21.32, longitude: -84.32, radius: 8, fillKey: 'gt50'},
+      
+
+     ], {
+       popupOnHover: true,
+       popupTemplate: function(data) {
+         return "<div class='hoverinfo'>It is " + data.name + "</div>";
+       }
+     });
+
+  d3.select('svg').append("line")          // attach a line
+    .style("stroke", "black")  // colour the line
+    .attr("x1", 584.2897777777778)     // x position of the first end of the line
+    .attr("y1", 533.7501334293254)      // y position of the first end of the line
+    .attr("x2", 300)     // x position of the second end of the line
+    .attr("y2", 150);    // y position of the second end of the line   
+})
 
 function color_with_fake_data(){
 	// example data from server
-    var series = [
-        ["BLR",75],["BLZ",43],["RUS",50],["RWA",88],["SRB",21],["TLS",43],
-        ["REU",21],["TKM",19],["TJK",60],["ROU",4],["TKL",44],["GNB",38],
-        ["GUM",67],["GTM",2],["SGS",95],["GRC",60],["GNQ",57],["GLP",53],
-        ["JPN",59],["GUY",24],["GGY",4],["GUF",21],["GEO",42],["GRD",65],
-        ["GBR",14],["GAB",47],["SLV",15],["GIN",19],["GMB",63],["GRL",56],
-        ["ERI",57],["MNE",93],["MDA",39],["MDG",71],["MAF",16],["MAR",8],
-        ["MCO",25],["UZB",81],["MMR",21],["MLI",95],["MAC",33],["MNG",93],
-        ["MHL",15],["MKD",52],["MUS",19],["MLT",69],["MWI",37],["MDV",44],
-        ["MTQ",13],["MNP",21],["MSR",89],["MRT",20],["IMN",72],["UGA",59],
-        ["TZA",62],["MYS",75],["MEX",80],["ISR",77],["FRA",54],["IOT",56],
-        ["SHN",91],["FIN",51],["FJI",22],["FLK",4],["FSM",69],["FRO",70],
-        ["NIC",66],["NLD",53],["NOR",7],["NAM",63],["VUT",15],["NCL",66],
-        ["NER",34],["NFK",33],["NGA",45],["NZL",96],["NPL",21],["NRU",13],
-        ["NIU",6],["COK",19],["XKX",32],["CIV",27],["CHE",65],["COL",64],
-        ["CHN",16],["CMR",70],["CHL",15],["CCK",85],["CAN",76],["COG",20],
-        ["CAF",93],["COD",36],["CZE",77],["CYP",65],["CXR",14],["CRI",31],
-        ["CUW",67],["CPV",63],["CUB",40],["SWZ",58],["SYR",96],["SXM",31]];
+    var series = [["USA",90],["BLZ",90],["RUS",90],["RWA",90],["SRB",90],["TLS",90],["REU",90],["TKM",90],["TJK",90],["ROU",90],["TKL",90],["GNB",90],["GUM",90],["GTM",90],["SGS",90],["GRC",90],["GNQ",90],["GLP",90],["JPN",90],["GUY",90],["GGY",90],["GUF",90],["GEO",90],["GRD",90],["GBR",90],["GAB",90],["SLV",90],["GIN",90],["GMB",90],["GRL",90],["ERI",90],["MNE",90],["MDA",90],["MDG",90],["MAF",90],["MAR",90],["MCO",90],["UZB",90],["MMR",90],["MLI",90],["MAC",90],["MNG",90],["MHL",90],["MKD",90],["MUS",90],["MLT",90],["MWI",90],["MDV",90],["MTQ",90],["MNP",90],["MSR",90],["MRT",90],["IMN",90],["UGA",90],["TZA",90],["MYS",90],["MEX",90],["ISR",90],["FRA",90],["IOT",90],["SHN",90],["FIN",90],["FJI",90],["FLK",90],["FSM",90],["FRO",90],["NIC",90],["NLD",90],["NOR",90],["NAM",90],["VUT",90],["NCL",90],["NER",90],["NFK",90],["NGA",90],["NZL",90],["NPL",90],["NRU",90],["NIU",90],["COK",90],["XKX",90],["CIV",90],["CHE",90],["COL",90],["CHN",90],["CMR",90],["CHL",90],["CCK",90],["CAN",90],["COG",90],["CAF",90],["COD",90],["CZE",90],["CYP",90],["CXR",90],["CRI",90],["CUW",90],["CPV",90],["CUB",90],["SWZ",90],["SYR",90],["SXM",90]];
     
     // Datamaps expect data in format:
     // { "USA": { "fillColor": "#42a844", numberOfWhatever: 75},
@@ -80,7 +179,7 @@ function color_with_fake_data(){
         // item example value ["USA", 70]
         var iso = item[0],
                 value = item[1];
-        dataset[iso] = { numberOfThings: value, fillColor: paletteScale(value) };
+        dataset[iso] = { numberOfThings: value, fillColor: "#02386F" };
     });
     return dataset
 }
