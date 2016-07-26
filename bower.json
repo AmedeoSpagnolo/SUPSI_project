@@ -19,6 +19,7 @@
   "dependencies": {
     "d3": "~3.5.17",
     "jquery": "~3.0.0",
-    "moment": "^2.14.1"
+    "moment": "^2.14.1",
+    "datamaps": "^0.5.7"
   }
 }
