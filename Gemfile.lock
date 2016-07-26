@@ -43,11 +43,13 @@ GEM
       http_parser.rb (~> 0.6.0)
     erubis (2.7.0)
     eventmachine (1.2.0.1)
+    eventmachine (1.2.0.1-x64-mingw32)
     execjs (2.7.0)
     fast_blank (1.0.0)
     fastimage (2.0.0)
       addressable (~> 2)
     ffi (1.9.10)
+    ffi (1.9.10-x64-mingw32)
     haml (4.0.7)
       tilt
     hamster (3.0.0)
@@ -131,6 +133,7 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   middleman (>= 4.0.0)

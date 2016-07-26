@@ -1,0 +1,994 @@
+[
+  {
+    "ABW": "AFG",
+    "Aruba": "Afghanistan"
+  },
+  {
+    "ABW": "AGO",
+    "Aruba": "Angola"
+  },
+  {
+    "ABW": "AIA",
+    "Aruba": "Anguilla"
+  },
+  {
+    "ABW": "ALA",
+    "Aruba": "Åland Islands"
+  },
+  {
+    "ABW": "ALB",
+    "Aruba": "Albania"
+  },
+  {
+    "ABW": "AND",
+    "Aruba": "Andorra"
+  },
+  {
+    "ABW": "ARE",
+    "Aruba": "United Arab Emirates"
+  },
+  {
+    "ABW": "ARG",
+    "Aruba": "Argentina"
+  },
+  {
+    "ABW": "ARM",
+    "Aruba": "Armenia"
+  },
+  {
+    "ABW": "ASM",
+    "Aruba": "American Samoa"
+  },
+  {
+    "ABW": "ATA",
+    "Aruba": "Antarctica"
+  },
+  {
+    "ABW": "ATF",
+    "Aruba": "French Southern Territories"
+  },
+  {
+    "ABW": "ATG",
+    "Aruba": "Antigua and Barbuda"
+  },
+  {
+    "ABW": "AUS",
+    "Aruba": "Australia"
+  },
+  {
+    "ABW": "AUT",
+    "Aruba": "Austria"
+  },
+  {
+    "ABW": "AZE",
+    "Aruba": "Azerbaijan"
+  },
+  {
+    "ABW": "BDI",
+    "Aruba": "Burundi"
+  },
+  {
+    "ABW": "BEL",
+    "Aruba": "Belgium"
+  },
+  {
+    "ABW": "BEN",
+    "Aruba": "Benin"
+  },
+  {
+    "ABW": "BES",
+    "Aruba": "Bonaire, Sint Eustatius and Saba"
+  },
+  {
+    "ABW": "BFA",
+    "Aruba": "Burkina Faso"
+  },
+  {
+    "ABW": "BGD",
+    "Aruba": "Bangladesh"
+  },
+  {
+    "ABW": "BGR",
+    "Aruba": "Bulgaria"
+  },
+  {
+    "ABW": "BHR",
+    "Aruba": "Bahrain"
+  },
+  {
+    "ABW": "BHS",
+    "Aruba": "Bahamas"
+  },
+  {
+    "ABW": "BIH",
+    "Aruba": "Bosnia and Herzegovina"
+  },
+  {
+    "ABW": "BLM",
+    "Aruba": "Saint Barthélemy"
+  },
+  {
+    "ABW": "BLR",
+    "Aruba": "Belarus"
+  },
+  {
+    "ABW": "BLZ",
+    "Aruba": "Belize"
+  },
+  {
+    "ABW": "BMU",
+    "Aruba": "Bermuda"
+  },
+  {
+    "ABW": "BOL",
+    "Aruba": "Bolivia, Plurinational State of"
+  },
+  {
+    "ABW": "BRA",
+    "Aruba": "Brazil"
+  },
+  {
+    "ABW": "BRB",
+    "Aruba": "Barbados"
+  },
+  {
+    "ABW": "BRN",
+    "Aruba": "Brunei Darussalam"
+  },
+  {
+    "ABW": "BTN",
+    "Aruba": "Bhutan"
+  },
+  {
+    "ABW": "BVT",
+    "Aruba": "Bouvet Island"
+  },
+  {
+    "ABW": "BWA",
+    "Aruba": "Botswana"
+  },
+  {
+    "ABW": "CAF",
+    "Aruba": "Central African Republic"
+  },
+  {
+    "ABW": "CAN",
+    "Aruba": "Canada"
+  },
+  {
+    "ABW": "CCK",
+    "Aruba": "Cocos (Keeling) Islands"
+  },
+  {
+    "ABW": "CHE",
+    "Aruba": "Switzerland"
+  },
+  {
+    "ABW": "CHL",
+    "Aruba": "Chile"
+  },
+  {
+    "ABW": "CHN",
+    "Aruba": "China"
+  },
+  {
+    "ABW": "CIV",
+    "Aruba": "Côte d'Ivoire"
+  },
+  {
+    "ABW": "CMR",
+    "Aruba": "Cameroon"
+  },
+  {
+    "ABW": "COD",
+    "Aruba": "Congo, the Democratic Republic of the"
+  },
+  {
+    "ABW": "COG",
+    "Aruba": "Congo"
+  },
+  {
+    "ABW": "COK",
+    "Aruba": "Cook Islands"
+  },
+  {
+    "ABW": "COL",
+    "Aruba": "Colombia"
+  },
+  {
+    "ABW": "COM",
+    "Aruba": "Comoros"
+  },
+  {
+    "ABW": "CPV",
+    "Aruba": "Cabo Verde"
+  },
+  {
+    "ABW": "CRI",
+    "Aruba": "Costa Rica"
+  },
+  {
+    "ABW": "CUB",
+    "Aruba": "Cuba"
+  },
+  {
+    "ABW": "CUW",
+    "Aruba": "Curaçao"
+  },
+  {
+    "ABW": "CXR",
+    "Aruba": "Christmas Island"
+  },
+  {
+    "ABW": "CYM",
+    "Aruba": "Cayman Islands"
+  },
+  {
+    "ABW": "CYP",
+    "Aruba": "Cyprus"
+  },
+  {
+    "ABW": "CZE",
+    "Aruba": "Czech Republic"
+  },
+  {
+    "ABW": "DEU",
+    "Aruba": "Germany"
+  },
+  {
+    "ABW": "DJI",
+    "Aruba": "Djibouti"
+  },
+  {
+    "ABW": "DMA",
+    "Aruba": "Dominica"
+  },
+  {
+    "ABW": "DNK",
+    "Aruba": "Denmark"
+  },
+  {
+    "ABW": "DOM",
+    "Aruba": "Dominican Republic"
+  },
+  {
+    "ABW": "DZA",
+    "Aruba": "Algeria"
+  },
+  {
+    "ABW": "ECU",
+    "Aruba": "Ecuador"
+  },
+  {
+    "ABW": "EGY",
+    "Aruba": "Egypt"
+  },
+  {
+    "ABW": "ERI",
+    "Aruba": "Eritrea"
+  },
+  {
+    "ABW": "ESH",
+    "Aruba": "Western Sahara"
+  },
+  {
+    "ABW": "ESP",
+    "Aruba": "Spain"
+  },
+  {
+    "ABW": "EST",
+    "Aruba": "Estonia"
+  },
+  {
+    "ABW": "ETH",
+    "Aruba": "Ethiopia"
+  },
+  {
+    "ABW": "FIN",
+    "Aruba": "Finland"
+  },
+  {
+    "ABW": "FJI",
+    "Aruba": "Fiji"
+  },
+  {
+    "ABW": "FLK",
+    "Aruba": "Falkland Islands (Malvinas)"
+  },
+  {
+    "ABW": "FRA",
+    "Aruba": "France"
+  },
+  {
+    "ABW": "FRO",
+    "Aruba": "Faroe Islands"
+  },
+  {
+    "ABW": "FSM",
+    "Aruba": "Micronesia, Federated States of"
+  },
+  {
+    "ABW": "GAB",
+    "Aruba": "Gabon"
+  },
+  {
+    "ABW": "GBR",
+    "Aruba": "United Kingdom"
+  },
+  {
+    "ABW": "GEO",
+    "Aruba": "Georgia"
+  },
+  {
+    "ABW": "GGY",
+    "Aruba": "Guernsey"
+  },
+  {
+    "ABW": "GHA",
+    "Aruba": "Ghana"
+  },
+  {
+    "ABW": "GIB",
+    "Aruba": "Gibraltar"
+  },
+  {
+    "ABW": "GIN",
+    "Aruba": "Guinea"
+  },
+  {
+    "ABW": "GLP",
+    "Aruba": "Guadeloupe"
+  },
+  {
+    "ABW": "GMB",
+    "Aruba": "Gambia"
+  },
+  {
+    "ABW": "GNB",
+    "Aruba": "Guinea-Bissau"
+  },
+  {
+    "ABW": "GNQ",
+    "Aruba": "Equatorial Guinea"
+  },
+  {
+    "ABW": "GRC",
+    "Aruba": "Greece"
+  },
+  {
+    "ABW": "GRD",
+    "Aruba": "Grenada"
+  },
+  {
+    "ABW": "GRL",
+    "Aruba": "Greenland"
+  },
+  {
+    "ABW": "GTM",
+    "Aruba": "Guatemala"
+  },
+  {
+    "ABW": "GUF",
+    "Aruba": "French Guiana"
+  },
+  {
+    "ABW": "GUM",
+    "Aruba": "Guam"
+  },
+  {
+    "ABW": "GUY",
+    "Aruba": "Guyana"
+  },
+  {
+    "ABW": "HKG",
+    "Aruba": "Hong Kong"
+  },
+  {
+    "ABW": "HMD",
+    "Aruba": "Heard Island and McDonald Islands"
+  },
+  {
+    "ABW": "HND",
+    "Aruba": "Honduras"
+  },
+  {
+    "ABW": "HRV",
+    "Aruba": "Croatia"
+  },
+  {
+    "ABW": "HTI",
+    "Aruba": "Haiti"
+  },
+  {
+    "ABW": "HUN",
+    "Aruba": "Hungary"
+  },
+  {
+    "ABW": "IDN",
+    "Aruba": "Indonesia"
+  },
+  {
+    "ABW": "IMN",
+    "Aruba": "Isle of Man"
+  },
+  {
+    "ABW": "IND",
+    "Aruba": "India"
+  },
+  {
+    "ABW": "IOT",
+    "Aruba": "British Indian Ocean Territory"
+  },
+  {
+    "ABW": "IRL",
+    "Aruba": "Ireland"
+  },
+  {
+    "ABW": "IRN",
+    "Aruba": "Iran, Islamic Republic of"
+  },
+  {
+    "ABW": "IRQ",
+    "Aruba": "Iraq"
+  },
+  {
+    "ABW": "ISL",
+    "Aruba": "Iceland"
+  },
+  {
+    "ABW": "ISR",
+    "Aruba": "Israel"
+  },
+  {
+    "ABW": "ITA",
+    "Aruba": "Italy"
+  },
+  {
+    "ABW": "JAM",
+    "Aruba": "Jamaica"
+  },
+  {
+    "ABW": "JEY",
+    "Aruba": "Jersey"
+  },
+  {
+    "ABW": "JOR",
+    "Aruba": "Jordan"
+  },
+  {
+    "ABW": "JPN",
+    "Aruba": "Japan"
+  },
+  {
+    "ABW": "KAZ",
+    "Aruba": "Kazakhstan"
+  },
+  {
+    "ABW": "KEN",
+    "Aruba": "Kenya"
+  },
+  {
+    "ABW": "KGZ",
+    "Aruba": "Kyrgyzstan"
+  },
+  {
+    "ABW": "KHM",
+    "Aruba": "Cambodia"
+  },
+  {
+    "ABW": "KIR",
+    "Aruba": "Kiribati"
+  },
+  {
+    "ABW": "KNA",
+    "Aruba": "Saint Kitts and Nevis"
+  },
+  {
+    "ABW": "KOR",
+    "Aruba": "Korea, Republic of"
+  },
+  {
+    "ABW": "KWT",
+    "Aruba": "Kuwait"
+  },
+  {
+    "ABW": "LAO",
+    "Aruba": "Lao People's Democratic Republic"
+  },
+  {
+    "ABW": "LBN",
+    "Aruba": "Lebanon"
+  },
+  {
+    "ABW": "LBR",
+    "Aruba": "Liberia"
+  },
+  {
+    "ABW": "LBY",
+    "Aruba": "Libya"
+  },
+  {
+    "ABW": "LCA",
+    "Aruba": "Saint Lucia"
+  },
+  {
+    "ABW": "LIE",
+    "Aruba": "Liechtenstein"
+  },
+  {
+    "ABW": "LKA",
+    "Aruba": "Sri Lanka"
+  },
+  {
+    "ABW": "LSO",
+    "Aruba": "Lesotho"
+  },
+  {
+    "ABW": "LTU",
+    "Aruba": "Lithuania"
+  },
+  {
+    "ABW": "LUX",
+    "Aruba": "Luxembourg"
+  },
+  {
+    "ABW": "LVA",
+    "Aruba": "Latvia"
+  },
+  {
+    "ABW": "MAC",
+    "Aruba": "Macao"
+  },
+  {
+    "ABW": "MAF",
+    "Aruba": "Saint Martin (French part)"
+  },
+  {
+    "ABW": "MAR",
+    "Aruba": "Morocco"
+  },
+  {
+    "ABW": "MCO",
+    "Aruba": "Monaco"
+  },
+  {
+    "ABW": "MDA",
+    "Aruba": "Moldova, Republic of"
+  },
+  {
+    "ABW": "MDG",
+    "Aruba": "Madagascar"
+  },
+  {
+    "ABW": "MDV",
+    "Aruba": "Maldives"
+  },
+  {
+    "ABW": "MEX",
+    "Aruba": "Mexico"
+  },
+  {
+    "ABW": "MHL",
+    "Aruba": "Marshall Islands"
+  },
+  {
+    "ABW": "MKD",
+    "Aruba": "Macedonia, the former Yugoslav Republic of"
+  },
+  {
+    "ABW": "MLI",
+    "Aruba": "Mali"
+  },
+  {
+    "ABW": "MLT",
+    "Aruba": "Malta"
+  },
+  {
+    "ABW": "MMR",
+    "Aruba": "Myanmar"
+  },
+  {
+    "ABW": "MNE",
+    "Aruba": "Montenegro"
+  },
+  {
+    "ABW": "MNG",
+    "Aruba": "Mongolia"
+  },
+  {
+    "ABW": "MNP",
+    "Aruba": "Northern Mariana Islands"
+  },
+  {
+    "ABW": "MOZ",
+    "Aruba": "Mozambique"
+  },
+  {
+    "ABW": "MRT",
+    "Aruba": "Mauritania"
+  },
+  {
+    "ABW": "MSR",
+    "Aruba": "Montserrat"
+  },
+  {
+    "ABW": "MTQ",
+    "Aruba": "Martinique"
+  },
+  {
+    "ABW": "MUS",
+    "Aruba": "Mauritius"
+  },
+  {
+    "ABW": "MWI",
+    "Aruba": "Malawi"
+  },
+  {
+    "ABW": "MYS",
+    "Aruba": "Malaysia"
+  },
+  {
+    "ABW": "MYT",
+    "Aruba": "Mayotte"
+  },
+  {
+    "ABW": "NAM",
+    "Aruba": "Namibia"
+  },
+  {
+    "ABW": "NCL",
+    "Aruba": "New Caledonia"
+  },
+  {
+    "ABW": "NER",
+    "Aruba": "Niger"
+  },
+  {
+    "ABW": "NFK",
+    "Aruba": "Norfolk Island"
+  },
+  {
+    "ABW": "NGA",
+    "Aruba": "Nigeria"
+  },
+  {
+    "ABW": "NIC",
+    "Aruba": "Nicaragua"
+  },
+  {
+    "ABW": "NIU",
+    "Aruba": "Niue"
+  },
+  {
+    "ABW": "NLD",
+    "Aruba": "Netherlands"
+  },
+  {
+    "ABW": "NOR",
+    "Aruba": "Norway"
+  },
+  {
+    "ABW": "NPL",
+    "Aruba": "Nepal"
+  },
+  {
+    "ABW": "NRU",
+    "Aruba": "Nauru"
+  },
+  {
+    "ABW": "NZL",
+    "Aruba": "New Zealand"
+  },
+  {
+    "ABW": "OMN",
+    "Aruba": "Oman"
+  },
+  {
+    "ABW": "PAK",
+    "Aruba": "Pakistan"
+  },
+  {
+    "ABW": "PAN",
+    "Aruba": "Panama"
+  },
+  {
+    "ABW": "PCN",
+    "Aruba": "Pitcairn"
+  },
+  {
+    "ABW": "PER",
+    "Aruba": "Peru"
+  },
+  {
+    "ABW": "PHL",
+    "Aruba": "Philippines"
+  },
+  {
+    "ABW": "PLW",
+    "Aruba": "Palau"
+  },
+  {
+    "ABW": "PNG",
+    "Aruba": "Papua New Guinea"
+  },
+  {
+    "ABW": "POL",
+    "Aruba": "Poland"
+  },
+  {
+    "ABW": "PRI",
+    "Aruba": "Puerto Rico"
+  },
+  {
+    "ABW": "PRK",
+    "Aruba": "Korea, Democratic People's Republic of"
+  },
+  {
+    "ABW": "PRT",
+    "Aruba": "Portugal"
+  },
+  {
+    "ABW": "PRY",
+    "Aruba": "Paraguay"
+  },
+  {
+    "ABW": "PSE",
+    "Aruba": "Palestine, State of"
+  },
+  {
+    "ABW": "PYF",
+    "Aruba": "French Polynesia"
+  },
+  {
+    "ABW": "QAT",
+    "Aruba": "Qatar"
+  },
+  {
+    "ABW": "REU",
+    "Aruba": "Réunion"
+  },
+  {
+    "ABW": "ROU",
+    "Aruba": "Romania"
+  },
+  {
+    "ABW": "RUS",
+    "Aruba": "Russian Federation"
+  },
+  {
+    "ABW": "RWA",
+    "Aruba": "Rwanda"
+  },
+  {
+    "ABW": "SAU",
+    "Aruba": "Saudi Arabia"
+  },
+  {
+    "ABW": "SDN",
+    "Aruba": "Sudan"
+  },
+  {
+    "ABW": "SEN",
+    "Aruba": "Senegal"
+  },
+  {
+    "ABW": "SGP",
+    "Aruba": "Singapore"
+  },
+  {
+    "ABW": "SGS",
+    "Aruba": "South Georgia and the South Sandwich Islands"
+  },
+  {
+    "ABW": "SHN",
+    "Aruba": "Saint Helena, Ascension and Tristan da Cunha"
+  },
+  {
+    "ABW": "SJM",
+    "Aruba": "Svalbard and Jan Mayen"
+  },
+  {
+    "ABW": "SLB",
+    "Aruba": "Solomon Islands"
+  },
+  {
+    "ABW": "SLE",
+    "Aruba": "Sierra Leone"
+  },
+  {
+    "ABW": "SLV",
+    "Aruba": "El Salvador"
+  },
+  {
+    "ABW": "SMR",
+    "Aruba": "San Marino"
+  },
+  {
+    "ABW": "SOM",
+    "Aruba": "Somalia"
+  },
+  {
+    "ABW": "SPM",
+    "Aruba": "Saint Pierre and Miquelon"
+  },
+  {
+    "ABW": "SRB",
+    "Aruba": "Serbia"
+  },
+  {
+    "ABW": "SSD",
+    "Aruba": "South Sudan"
+  },
+  {
+    "ABW": "STP",
+    "Aruba": "Sao Tome and Principe"
+  },
+  {
+    "ABW": "SUR",
+    "Aruba": "Suriname"
+  },
+  {
+    "ABW": "SVK",
+    "Aruba": "Slovakia"
+  },
+  {
+    "ABW": "SVN",
+    "Aruba": "Slovenia"
+  },
+  {
+    "ABW": "SWE",
+    "Aruba": "Sweden"
+  },
+  {
+    "ABW": "SWZ",
+    "Aruba": "Swaziland"
+  },
+  {
+    "ABW": "SXM",
+    "Aruba": "Sint Maarten (Dutch part)"
+  },
+  {
+    "ABW": "SYC",
+    "Aruba": "Seychelles"
+  },
+  {
+    "ABW": "SYR",
+    "Aruba": "Syrian Arab Republic"
+  },
+  {
+    "ABW": "TCA",
+    "Aruba": "Turks and Caicos Islands"
+  },
+  {
+    "ABW": "TCD",
+    "Aruba": "Chad"
+  },
+  {
+    "ABW": "TGO",
+    "Aruba": "Togo"
+  },
+  {
+    "ABW": "THA",
+    "Aruba": "Thailand"
+  },
+  {
+    "ABW": "TJK",
+    "Aruba": "Tajikistan"
+  },
+  {
+    "ABW": "TKL",
+    "Aruba": "Tokelau"
+  },
+  {
+    "ABW": "TKM",
+    "Aruba": "Turkmenistan"
+  },
+  {
+    "ABW": "TLS",
+    "Aruba": "Timor-Leste"
+  },
+  {
+    "ABW": "TON",
+    "Aruba": "Tonga"
+  },
+  {
+    "ABW": "TTO",
+    "Aruba": "Trinidad and Tobago"
+  },
+  {
+    "ABW": "TUN",
+    "Aruba": "Tunisia"
+  },
+  {
+    "ABW": "TUR",
+    "Aruba": "Turkey"
+  },
+  {
+    "ABW": "TUV",
+    "Aruba": "Tuvalu"
+  },
+  {
+    "ABW": "TWN",
+    "Aruba": "Taiwan, Province of China"
+  },
+  {
+    "ABW": "TZA",
+    "Aruba": "Tanzania, United Republic of"
+  },
+  {
+    "ABW": "UGA",
+    "Aruba": "Uganda"
+  },
+  {
+    "ABW": "UKR",
+    "Aruba": "Ukraine"
+  },
+  {
+    "ABW": "UMI",
+    "Aruba": "United States Minor Outlying Islands"
+  },
+  {
+    "ABW": "URY",
+    "Aruba": "Uruguay"
+  },
+  {
+    "ABW": "USA",
+    "Aruba": "United States of America"
+  },
+  {
+    "ABW": "UZB",
+    "Aruba": "Uzbekistan"
+  },
+  {
+    "ABW": "VAT",
+    "Aruba": "Holy See (Vatican City State)"
+  },
+  {
+    "ABW": "VCT",
+    "Aruba": "Saint Vincent and the Grenadines"
+  },
+  {
+    "ABW": "VEN",
+    "Aruba": "Venezuela, Bolivarian Republic of"
+  },
+  {
+    "ABW": "VGB",
+    "Aruba": "Virgin Islands, British"
+  },
+  {
+    "ABW": "VIR",
+    "Aruba": "Virgin Islands, U.S."
+  },
+  {
+    "ABW": "VNM",
+    "Aruba": "Viet Nam"
+  },
+  {
+    "ABW": "VUT",
+    "Aruba": "Vanuatu"
+  },
+  {
+    "ABW": "WLF",
+    "Aruba": "Wallis and Futuna"
+  },
+  {
+    "ABW": "WSM",
+    "Aruba": "Samoa"
+  },
+  {
+    "ABW": "YEM",
+    "Aruba": "Yemen"
+  },
+  {
+    "ABW": "ZAF",
+    "Aruba": "South Africa"
+  },
+  {
+    "ABW": "ZMB",
+    "Aruba": "Zambia"
+  },
+  {
+    "ABW": "ZWE",
+    "Aruba": "Zimbabwe"
+  }
+]

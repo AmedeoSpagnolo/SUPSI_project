@@ -19,3 +19,7 @@
 /untracked/
 untracked/
 /temp/
+
+# Ignore Bower
+/vendor
+
