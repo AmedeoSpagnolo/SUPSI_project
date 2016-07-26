@@ -1,4 +1,45 @@
 $( document ).ready(function() {
+
+  //
+  // fake dataset
+  //
+  var dataset = createdataset(color_virgo_countries())
+
+  // 
+  // render map
+  //
+  var datamap = new Datamap({
+    element: document.getElementById('container'),
+    projection: 'mercator', // big world map
+    fills: { defaultFill: '#F5F5F5' },
+    data: dataset,
+    geographyConfig: {
+      borderColor: '#DEDEDE',
+      highlightBorderWidth: 2,
+      // don't change color on mouse hover
+      highlightFillColor: function(geo) {
+          return geo['fillColor'] || '#F5F5F5';
+      },
+      // only change border
+      highlightBorderColor: '#B7B7B7',
+      // show desired information in tooltip
+      popupTemplate: function(geo, data) {
+          // don't show tooltip if country don't present in dataset
+          if (!data) { return ; }
+          // tooltip content
+          return ['<div class="hoverinfo">',
+              '<strong>', geo.properties.name, '</strong>',
+              '<br>Count: <strong>', data.numberOfThings, '</strong>',
+              '</div>'].join('');
+      }
+    }
+  })
+
+
+})
+
+
+function color_with_fake_data(){
 	// example data from server
     var series = [
         ["BLR",75],["BLZ",43],["RUS",50],["RWA",88],["SRB",21],["TLS",43],
@@ -41,32 +82,42 @@ $( document ).ready(function() {
                 value = item[1];
         dataset[iso] = { numberOfThings: value, fillColor: paletteScale(value) };
     });
-    // render map
-    new Datamap({
-        element: document.getElementById('container'),
-        projection: 'mercator', // big world map
-        // countries don't listed in dataset will be painted with this color
-        fills: { defaultFill: '#F5F5F5' },
-        data: dataset,
-        geographyConfig: {
-            borderColor: '#DEDEDE',
-            highlightBorderWidth: 2,
-            // don't change color on mouse hover
-            highlightFillColor: function(geo) {
-                return geo['fillColor'] || '#F5F5F5';
-            },
-            // only change border
-            highlightBorderColor: '#B7B7B7',
-            // show desired information in tooltip
-            popupTemplate: function(geo, data) {
-                // don't show tooltip if country don't present in dataset
-                if (!data) { return ; }
-                // tooltip content
-                return ['<div class="hoverinfo">',
-                    '<strong>', geo.properties.name, '</strong>',
-                    '<br>Count: <strong>', data.numberOfThings, '</strong>',
-                    '</div>'].join('');
-            }
-        }
+    return dataset
+}
+
+
+function color_virgo_countries(){
+  var virgo = []
+  <% data.countryscope.countries['Virgo'].each do |country|%>
+    virgo.push([
+      '<%= data.country_codes["#{country[:place]}"] %>', 700
+    ])
+  <% end %>
+
+  console.log(virgo)
+
+  return virgo
+}
+
+
+function createdataset(series){
+    
+    var dataset = {};
+
+    var onlyValues = series.map(function(obj){ return obj[1]; });
+    var minValue = Math.min.apply(null, onlyValues),
+            maxValue = Math.max.apply(null, onlyValues);
+    // create color palette function
+    // color can be whatever you wish
+    var paletteScale = d3.scale.linear()
+            .domain([minValue,maxValue])
+            .range(["#EFEFFF","#02386F"]); // blue color
+    // fill dataset in appropriate format
+    series.forEach(function(item){ //
+        // item example value ["USA", 70]
+        var iso = item[0],
+                value = item[1];
+        dataset[iso] = { numberOfThings: value, fillColor: 'black' };
     });
-})
+    return dataset
+}
