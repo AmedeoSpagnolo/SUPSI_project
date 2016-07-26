@@ -1,13 +1,4 @@
-<br>
-<br>
-<div id="container" style="position: relative; width: 700px; height: 700px;"></div>
-<h1>countries</h1>
-<% data.countryscope.countries.each do |sign| %>
-  <h2><%= sign[0] %></h2>
-  <% sign[1].each do |pla| %>
-    <br>
-    <%= data.country_codes[pla[:place]] %>
-    <b bdate="<%= pla[:date] %>"></b>
-  <% end %>
-<% end %>
+<div class="worldmap" row center-center>
+  <div id="map_container" class="map_container"></div>
+</div>
 

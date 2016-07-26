@@ -9,10 +9,11 @@ $( document ).ready(function() {
   // render map
   //
   var datamap = new Datamap({
-    element: document.getElementById('container'),
+    element: document.getElementById('map_container'),
     projection: 'mercator', // big world map
     fills: { defaultFill: '#F5F5F5' },
     data: dataset,
+    responsive: true,
     geographyConfig: {
       borderColor: '#DEDEDE',
       highlightBorderWidth: 2,
@@ -35,6 +36,9 @@ $( document ).ready(function() {
     }
   })
 
+  $(window).on('resize', function(){
+    datamap.resize()
+  })
 
 })
 
