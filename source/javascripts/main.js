@@ -5,6 +5,9 @@
 //= require topojson
 //= require datamaps/dist/datamaps.world
 
+//= require global
 //= require checkdate
 //= require birthinput
 //= require generate_map
+//= require horoscope
+
