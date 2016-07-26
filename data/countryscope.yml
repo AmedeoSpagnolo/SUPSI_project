@@ -1,14 +1,10 @@
 ---
 countries:
   Capricorn:
-    - place: Alaska
-      date: January 3
     - place: Albania
       date: January 11
     - place: Australia
       date: January 1
-    - place: Burma
-      date: January 4
     - place: Cameroon
       date: January 1
     - place: Cuba
@@ -40,7 +36,7 @@ countries:
       date: February 7
     - place: Iran
       date: February 11
-    - place: Liechenstein
+    - place: Liechtenstein
       date: January 23
     - place: Nauru
       date: January 31
@@ -52,7 +48,7 @@ countries:
       date: February 4
     - place: Vatican
       date: February 11
-    - place: Yugoslavia
+    - place: Macedonia
       date: January 31
   Pisces:
     - place: Taiwan
@@ -137,11 +133,11 @@ countries:
       date: July 2
     - place: Canada
       date: July 1
-    - place: Cape Verde
+    - place: Cabo Verde
       date: July 5
     - place: Comoros
       date: July 6
-    - place: Czechoslovakia
+    - place: Czech Republic
       date: July 11
     - place: Djibouti
       date: June 27
@@ -159,11 +155,11 @@ countries:
       date: February 6
     - place: Oman
       date: July 23
-    - place: Phillipines
+    - place: Philippines
       date: July 4
     - place: Rwanda
       date: July 1
-    - place: Sao Tome
+    - place: Sao Tome and Principe
       date: July 12
     - place: Seychelles
       date: June 29
@@ -173,12 +169,10 @@ countries:
       date: July 1
     - place: Thailand
       date: June 24
-    - place: U.S.A.
+    - place: United States of America
       date: July 4
-    - place: Vietnam
+    - place: Viet Nam
       date: July 2
-    - place: Zaire
-      date: June 30
   Leo:
     - place: Bahrain
       date: August 14
@@ -188,8 +182,6 @@ countries:
       date: August 7
     - place: Bhutan
       date: August 8
-    - place: Bolivia
-      date: August 6
     - place: Central African Republic
       date: August 13
     - place: Chad
@@ -202,19 +194,17 @@ countries:
       date: August 16
     - place: Gabon
       date: August 17
-    - place: Hawaii
-      date: August 21
     - place: Hungary
       date: August 18
     - place: India
       date: August 15
-    - place: Ivory Coast
+    - place: Côte d'Ivoire
       date: August 7
     - place: Jamaica
       date: August 6
     - place: Puerto Rico
       date: July 25
-    - place: South Korea
+    - place: North Korea
       date: August 15
     - place: Liberia
       date: July 26
@@ -232,8 +222,6 @@ countries:
       date: August 9
     - place: Tunisia
       date: July 25
-    - place: Upper Volta
-      date: August 5
     - place: Vanuatu
       date: July 30
   Virgo:
@@ -257,18 +245,16 @@ countries:
       date: September 16
     - place: Papua New Guinea
       date: September 16
-    - place: Oatar
+    - place: Qatar
       date: September 1
-    - place: St.Christopher-Nevis
+    - place: Saint Kitts and Nevis
       date: September 19
     - place: Switzerland
       date: September 12
-    - place: Trinidad & Tobago
+    - place: Trinidad and Tobago
       date: August 31
     - place: Uruguay
       date: August 25
-    - place: Venda
-      date: September 13
   Libra:
     - place: Botswana
       date: September 30
@@ -300,7 +286,7 @@ countries:
       date: September 30
     - place: Uganda
       date: October 9
-    - place: Yemen Arab Republic
+    - place: Yemen
       date: September 27
   Scorpio:
     - place: Angola
@@ -315,18 +301,16 @@ countries:
       date: November 3
     - place: Dominican Republic
       date: November 6
-    - place: Equat.Guinea
+    - place: Equatorial Guinea
       date: November 12
     - place: Honduras
       date: November 5
     - place: Panama
       date: November 3
-    - place: St.Vincent & the Grenadines
+    - place: Saint Vincent and the Grenadines
       date: October 26
     - place: South Africa
       date: October 31
-    - place: Transkei
-      date: October 26
     - place: Turkey
       date: October 29
     - place: Zambia
@@ -336,8 +320,6 @@ countries:
       date: December 16
     - place: Barbados
       date: November 30
-    - place: Ciskei
-      date: December 4
     - place: Finland
       date: December 6
     - place: Kenya
@@ -350,7 +332,7 @@ countries:
       date: November 28
     - place: Mongolia
       date: November 26
-    - place: Surinam
+    - place: Suriname
       date: November 25
     - place: United Arab Emirates
       date: December 2

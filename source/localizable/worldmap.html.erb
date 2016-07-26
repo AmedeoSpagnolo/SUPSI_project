@@ -1,4 +1,3 @@
-
 <br>
 <br>
 <div id="container" style="position: relative; width: 700px; height: 700px;"></div>
@@ -7,19 +6,7 @@
   <h2><%= sign[0] %></h2>
   <% sign[1].each do |pla| %>
     <br>
-    <%= pla[:place] %>
-    <b bdate="<%= pla[:date] %>"></b>
-  <% end %>
-<% end %>
-
-<br>
-<br>
-<h1>cities</h1>
-<% data.countryscope.cities.each do |sign| %>
-  <h2><%= sign[0] %></h2>
-  <% sign[1].each do |pla| %>
-    <br>
-    <%= pla[:place] %>
+    <%= data.country_codes[pla[:place]] %>
     <b bdate="<%= pla[:date] %>"></b>
   <% end %>
 <% end %>
