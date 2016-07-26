@@ -1,28 +1,11 @@
-index
-
-<br>
-<br>
-<h1>countries</h1>
-<% data.countryscope.countries.each do |sign| %>
-  <h2><%= sign[0] %></h2>
-  <% sign[1].each do |pla| %>
-    <br>
-    <%= pla[:place] %>
-    <b bdate="<%= pla[:date] %>"></b>
-  <% end %>
-<% end %>
-
-<br>
-<br>
-<h1>cities</h1>
-<% data.countryscope.cities.each do |sign| %>
-  <h2><%= sign[0] %></h2>
-  <% sign[1].each do |pla| %>
-    <br>
-    <%= pla[:place] %>
-    <b bdate="<%= pla[:date] %>"></b>
-  <% end %>
-<% end %>
-
-
-
+<div class="home" column center-center>
+  <div class="wrap">
+    <div class="lable" row center-center>
+      Hi, insert your&nbsp
+      <div class="birth_input" id="sign">sign</div>
+      <div class="oroscope" id="oroscope">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, dolorem quia? Fugiat vel, at. Laboriosam, minus officiis blanditiis dolores dicta ad unde reiciendis optio tenetur ipsam, dolor, quidem odit corporis.
+      </div>
+    </div>
+  </div>
+</div>

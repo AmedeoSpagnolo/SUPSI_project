@@ -6,5 +6,4 @@
 //= require topojson
 
 //= require checkdate
-
-
+//= require birthinput
