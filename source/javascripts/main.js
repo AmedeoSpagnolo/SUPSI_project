@@ -4,5 +4,4 @@
 //= require moment
 
 //= require checkdate
-
-
+//= require birthinput

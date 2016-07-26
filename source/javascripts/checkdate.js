@@ -6,5 +6,6 @@ $( document ).ready(function() {
 		// console.log(qwe + ' ')
 		$($('[bdate]')[j]).html(qwe)
 	}
+
 });
 
