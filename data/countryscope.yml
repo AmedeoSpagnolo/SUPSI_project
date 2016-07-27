@@ -27,6 +27,18 @@ countries:
       date: January 1
     - place: United Kingdom
       date: January 1
+    - place: 'Brunei Darussalam'
+      date: January 11
+      code: BRN
+    - place: 'Myanmar'
+      date: January 11
+      code: MMR
+    - place: 'Slovakia'
+      date: January 11
+      code: SVK
+    - place: 'Slovenia'
+      date: January 11
+      code: SVN
   aquarius:
     - place: Gambia
       date: February 18
@@ -50,6 +62,18 @@ countries:
       date: February 11
     - place: Macedonia
       date: January 31
+    - code: HMD
+      place: 'Heard Island and McDonald Islands'
+      date: February 7
+    - code: LTU
+      place: 'Lithuania'
+      date: February 7
+    - code: PYF
+      place: 'French Polynesia'
+      date: February 7
+    - code: SRB
+      place: 'Serbia'
+      date: February 7      
   pisces:
     - place: Taiwan
       date: March 1
@@ -67,6 +91,15 @@ countries:
       date: March 16
     - place: St. Lucia
       date: February 22
+    - code: BIH
+      place: 'Bosnia and Herzegovina'
+      date: 'Pisces'
+    - code: GGY
+      place: 'Guernsey'
+      date: 'Pisces'
+    - code: SGS
+      place: 'South Georgia and the South Sandwich Islands'
+      date: 'Pisces'
   aries:
     - place: Cambodia
       date: April 17
@@ -82,6 +115,30 @@ countries:
       date: April 1
     - place: Zimbabwe
       date: April 18
+    - code: ATF
+      place: 'French Southern Territories'
+      date: 'Aries'
+    - code: GUM
+      place: 'Guam'
+      date: 'Aries'
+    - code: JEY
+      place: 'Jersey'
+      date: 'Aries'
+    - code: MSR
+      place: 'Montserrat'
+      date: 'Aries'
+    - code: NAM
+      place: 'Namibia'
+      date: 'Aries'
+    - code: PCN
+      place: 'Pitcairn'
+      date: 'Aries'
+    - code: TJK
+      place: 'Tajikistan'
+      date: 'Aries'
+    - code: VGB
+      place: 'Virgin Islands, British'
+      date: 'Aries'
   gemini:
     - place: Denmark 
       date: June 5
@@ -103,6 +160,36 @@ countries:
       date: June 6
     - place: Tonga 
       date: June 4
+    - code: ARM
+      place: 'Armenia'
+      date: 'Gemini'
+    - code: AZE
+      place: 'Azerbaijan'
+      date: 'Gemini'
+    - code: ERI
+      place: 'Eritrea'
+      date: 'Gemini'
+    - code: EST
+      place: 'Estonia'
+      date: 'Gemini'
+    - code: GEO
+      place: 'Georgia'
+      date: 'Gemini'
+    - code: MNE
+      place: 'Montenegro'
+      date: 'Gemini'
+    - code: NFK
+      place: 'Norfolk Island'
+      date: 'Gemini'
+    - code: SMR
+      place: 'San Marino'
+      date: 'Gemini'
+    - code: TLS
+      place: 'Timor-Leste'
+      date: 'Gemini'
+    - code: UZB
+      place: 'Uzbekistan'
+      date: 'Gemini'
   taurus:
     - place: Austria 
       date: May 15
@@ -120,6 +207,33 @@ countries:
       date: April 26
     - place: Togo 
       date: April 27
+    - code: BOL
+      place: 'Bolivia, Plurinational State of'
+      date: 'Taurus'
+    - code: CUW
+      place: 'Curaçao'
+      date: 'Taurus'
+    - code: FLK
+      place: 'Falkland Islands (Malvinas)'
+      date: 'Taurus'
+    - code: GRL
+      place: 'Greenland'
+      date: 'taurus'
+    - code: LVA
+      place: 'Latvia'
+      date: 'Taurus'
+    - code: MHL
+      place: 'Marshall Islands'
+      date: 'Taurus'
+    - code: NIU
+      place: 'Niue'
+      date: 'Taurus'
+    - code: UMI
+      place: 'United States Minor Outlying Islands'
+      date: 'Taurus'
+    - code: WLF
+      place: 'Wallis and Futuna'
+      date: 'Taurus'
   cancer:
     - place: Afghanistan
       date: July 17
@@ -173,6 +287,39 @@ countries:
       date: July 4
     - place: Viet Nam
       date: July 2
+    - code: BLM
+      place: 'Saint Barthélemy'
+      date: 'Cancer'
+    - code: BLR
+      place: 'Belarus'
+      date: 'Cancer'
+    - code: COD
+      place: 'Congo, the Democratic Republic of the'
+      date: 'Cancer'
+    - code: HRV
+      place: 'Croatia'
+      date: 'Cancer'
+    - code: IMN
+      place: 'Isle of Man'
+      date: 'Cancer'
+    - code: MAF
+      place: 'Saint Martin (French part)'
+      date: 'Cancer'
+    - code: MNP
+      place: 'Northern Mariana Islands'
+      date: 'Cancer'
+    - code: NCL
+      place: 'New Caledonia'
+      date: 'Cancer'
+    - code: RUS
+      place: 'Russian Federation'
+      date: 'Cancer'
+    - code: SPM
+      place: 'Saint Pierre and Miquelon'
+      date: 'Cancer'
+    - code: VIR
+      place: 'Virgin Islands, U.S.'
+      date: 'Cancer'
   leo:
     - place: Bahrain
       date: August 14
@@ -224,6 +371,24 @@ countries:
       date: July 25
     - place: Vanuatu
       date: July 30
+    - code: AIA
+      place: 'Anguilla'
+      date: 'Leo'
+    - code: BFA
+      place: 'Burkina Faso'
+      date: 'Leo'
+    - code: COK
+      place: 'Cook Islands'
+      date: 'Leo'
+    - code: CYM
+      place: 'Cayman Islands'
+      date: 'Leo'
+    - code: IOT
+      place: 'British Indian Ocean Territory'
+      date: 'Leo'
+    - code: KOR
+      place: 'South Korea'
+      date: 'Leo'
   virgo:
     - place: Belize
       date: September 21
@@ -255,6 +420,21 @@ countries:
       date: August 31
     - place: Uruguay
       date: August 25
+    - code: AND
+      place: 'Andorra'
+      date: 'Virgo'
+    - code: GIB
+      place: 'Gibraltar'
+      date: 'Virgo'
+    - code: KGZ
+      place: 'Kyrgyzstan'
+      date: 'Virgo'
+    - code: MDA
+      place: 'Moldova, Republic of'
+      date: 'Virgo'
+    - code: UKR
+      place: 'Ukraine'
+      date: 'Virgo'
   libra:
     - place: Botswana
       date: September 30
@@ -288,6 +468,18 @@ countries:
       date: October 9
     - place: Yemen
       date: September 27
+    - code: FRO
+      place: 'Faroe Islands'
+      date: 'Libra'
+    - code: GNB
+      place: 'Guinea-Bissau'
+      date: 'Libra'
+    - code: PLW
+      place: 'Palau'
+      date: 'Libra'
+    - code: SHN
+      place: 'Saint Helena, Ascension and Tristan da Cunha'
+      date: 'Libra'
   scorpio:
     - place: Angola
       date: November 11
@@ -315,6 +507,18 @@ countries:
       date: October 29
     - place: Zambia
       date: October 24
+    - code: ASM
+      place: 'American Samoa'
+      date: 'Scorpio'
+    - code: SXM
+      place: 'Sint Maarten (Dutch part)'
+      date: 'Scorpio'
+    - code: TCA
+      place: 'Turks and Caicos Islands'
+      date: 'Scorpio'
+    - code: TKM
+      place: 'Turkmenistan'
+      date: 'Scorpio'
   sagittarius:
     - place: Bangladesh
       date: December 16
@@ -340,6 +544,21 @@ countries:
       date: December 8
     - place: Yemen
       date: November 30
+    - code: ABW
+      place: 'Aruba'
+      date: 'Sagittarius'
+    - code: FSM
+      place: 'Micronesia, Federated States of'
+      date: 'Sagittarius'
+    - code: HKG
+      place: 'Hong Kong'
+      date: 'Sagittarius'
+    - code: KAZ
+      place: 'Kazakhstan'
+      date: 'Sagittarius'
+    - code: MAC
+      place: 'Macao'
+      date: 'Sagittarius'
 
 cities:
   aries:
