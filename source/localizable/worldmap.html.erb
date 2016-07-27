@@ -1,4 +1,12 @@
+<script type="text/javascript">
+  <% csv_data('Affinity_matchings_table').map.with_index do |x, i| %>
+    app.affinity['<%= x[0] %>'] = {}
+    <% x[1].each do |key, value| %>
+      app.affinity['<%= x[0] %>']['<%= key %>'] = '<%= value %>'
+    <% end %>
+  <% end %>
+</script>
+
 <div class="worldmap" row center-center>
   <div id="map_container" class="map_container"></div>
 </div>
-

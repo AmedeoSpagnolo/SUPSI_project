@@ -201,8 +201,19 @@
 
     var geo = subunits.selectAll('path.datamaps-subunit').data( geoData );
 
-    geo.enter()
-      .append('path')
+    var wolf = geo.enter()
+      .append('g')
+      .style('position', 'relative')
+      .attr('class', 'place_group')
+      .attr('id', function(d) {
+        return d.id;
+      })  
+    // wolf.append('circle')
+    //   .attr('fill', 'orange')
+    //   .attr('r', 20)
+    //   .attr('cx', 20)
+    //   .attr('cy', 20)
+    wolf.append('path')
       .attr('d', this.path)
       .attr('class', function(d) {
         return 'datamaps-subunit ' + d.id;
@@ -468,19 +479,19 @@
             .style("stroke-width", options.lineWidth || 1)
         }
 
-          layer.append("text")
-              .attr("x", x)
-              .attr("y", y)
-              .style("font-size", (options.fontSize || 10) + 'px')
-              .style("font-family", options.fontFamily || "Verdana")
+          layer.append("circle")
+              .attr("cx", x)
+              .attr("cy", y)
+              // .style("font-size", (options.fontSize || 10) + 'px')
+              // .style("font-family", options.fontFamily || "Verdana")
               .style("fill", options.labelColor || "#000")
-              .text(function() {
-                  if (options.customLabelText && options.customLabelText[d.id]) {
-                      return options.customLabelText[d.id]
-                  } else {
-                      return d.id
-                  }
-              });
+              // .text(function() {
+              //     if (options.customLabelText && options.customLabelText[d.id]) {
+              //         return options.customLabelText[d.id]
+              //     } else {
+              //         return d.id
+              //     }
+              // });
 
         return "bar";
       });

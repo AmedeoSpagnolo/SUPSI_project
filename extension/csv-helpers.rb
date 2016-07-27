@@ -3,8 +3,8 @@ class CSV_Helpers < Middleman::Extension
 		super
 	end
 	helpers do
-		def csv_data(file)
-			csv_data = File.read(File.join('csv', file))
+		def csv_data(filename)
+			csv_data = File.read(File.join("csv/#{filename}.csv"))
 			hash = CSV.new(csv_data, :headers => :first_row, :header_converters => :symbol)
 			array = hash.to_a.map { |row| row.to_hash } 
 			

@@ -16,7 +16,7 @@ set :images_dir,  'images'
 
 
 after_configuration do
-    sprockets.append_path File.join( root, "vendor/assets/bower/" )
+  sprockets.append_path File.join( root, "vendor/assets/bower/" )
 end
 
 
