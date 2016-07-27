@@ -1,3 +1,4 @@
+<!-- load csv data -->
 <script type="text/javascript">
   <% csv_data('Affinity_matchings_table').map.with_index do |x, i| %>
     app.affinity['<%= x[0] %>'] = {}
@@ -7,9 +8,23 @@
   <% end %>
 </script>
 
+
+<!-- map -->
 <div class="worldmap" column center-center>
   <div id="currentsign"></div>
   <div id="map_container" class="map_container"></div>
 </div>
 
+
+<!-- tool left -->
+<div class="tools left">
+</div>
+
+
+<!-- tool right -->
+<div class="tools right">
+</div>
+
+
+<!-- footer -->
 <%= partial "footer" %>
