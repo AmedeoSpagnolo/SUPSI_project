@@ -1,16 +1,24 @@
 <div class="home" column center-center>
   <div class="wrap">
-    <div class="lable" center center-center>
+    <div class="lable" column center-center>
       <div>
-        <span>Countries doesn't define identity any more, stars do.<br>My star sign is</span>
-        <span class="birth_input" id="sign">your start sign</span>
+        <span>
+          No matter where you were born,<br>only the stars define where you belong.<br>All the
+        </span>
+        <span class="star_input" id="sign">
+          star signs
+          <div class="modal" id="modal">
+            amedeo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore suscipit nemo numquam ad voluptate, necessitatibus, aliquam libero placeat quidem, itaque nisi expedita nobis quam consequatur veniam illo eveniet ducimus non.
+          </div>
+        </span>
+        <span>
+          share a place in the world.
+        </span>
       </div>
-      <div class="oroscope" id="oroscope">
-        <span>you believe a place that ..</span>
-        <div id="oroscope_content"></div>
-        <span class="link_to_map">
-          <%= link_to 'check out your place on the map', "/#{I18n.locale}/worldmap" %>
-          </span>
+      <div class="link_wrap">
+        <div class="calltoaction">Find it on the map ></div>
+        <div class="hover_effect"></div>
+        <div class="hover_bg"></div>
       </div>
     </div>
   </div>
