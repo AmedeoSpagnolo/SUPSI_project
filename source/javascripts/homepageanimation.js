@@ -34,11 +34,11 @@ document.body.appendChild(stats.domElement);*/
       context = canvas.getContext('2d'),
       defaults = {
         star: {
-          color: 'rgba(255, 255, 255, .5)',
+          color: 'white',
           width: 1
         },
         line: {
-          color: 'rgba(255, 255, 255, .5)',
+          color: 'white',
           width: 0.2
         },
         position: {
@@ -205,7 +205,7 @@ $('#canvas').constellation({
     width: 3
   },
   line: {
-    color: 'rgba(00, 41, 94, 1)'
+    color: 'white'
   },
   radius: 250
 });

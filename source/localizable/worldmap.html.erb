@@ -14,11 +14,20 @@
   <div id="map_container" class="map_container"></div>
 </div>
 
-
+ 
 <!-- tool left -->
 <div class="tools left" column between-start>
-  <div id="currentsign" class="currentsign"></div>
-  <div id="currentsign_svg" class="currentsign_svg"></div>
+  
+  <!-- main info -->
+  <div class="info_current_sign">
+    <div id="currentsign" class="currentsign"></div>
+    <div id="currentsign_svg" class="currentsign_svg"></div>
+  </div>
+  
+  <!-- infobox -->
+  <div class="content_info_box"><svg id="info_box"></svg></div>
+
+  <!-- other signs -->
   <div class="othersigns" row center-center wrap>
     <% data.signs.sign.each do |s| %>
       <div class="othersigns_item <%= s %>">

@@ -22,13 +22,39 @@
 .tools
   position: absolute
   top: 1rem
-  width: 10rem
+  width: 14rem
   height: auto
   bottom: 4rem
   &.left
     left: 1rem
   &.right
     right: 1rem
+  .info_current_sign
+    background-color: red
+    display: flex
+    height: 100%
+    width: 100%
+  .content_info_box
+    position: relative
+    height: 16rem
+    margin: 1rem 0
+    width: 100%
+    &:after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      background-color: white
+      opacity: .1
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+    svg
+      position: absolute
+      width: 100%
+      height: 100%
+
   .currentsign
     font-size: 30px
     font-weight: bold
