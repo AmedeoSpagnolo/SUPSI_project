@@ -6,8 +6,13 @@ $( document ).ready(function() {
 
   })
 
-    
   $('#bg_hover').on('click', function(){
+    closeModal()
+  })
+
+  $('.star_selection').on('click', function(){
+    app.sign = $(this).attr('selection')
+    $('#sign').html(app.sign)
     closeModal()
   })
 
@@ -23,6 +28,7 @@ $( document ).ready(function() {
     $('#modal').css({
       'opacity': 0
     }).hide()
+    $('#link_wrap').show()
   }
 
 });
