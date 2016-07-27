@@ -11,3 +11,35 @@
   <div id="currentsign"></div>
   <div id="map_container" class="map_container"></div>
 </div>
+
+
+<script>
+
+function getSize (obj) {
+    var size = 0, key;
+    for (key in obj) {
+        if (obj.hasOwnProperty(key)) size++;
+    }
+    return size;
+};
+
+$( document ).ready(function() {
+
+
+// console.log(getSize(everyplace))
+var tttt = 0
+<% data.countryscope.countries.each do |e| %>
+  <% (e[1].length).times do |iter| %>
+  <% qwe =  e[1][iter][:place] %>
+  var qweqwe = '<%= data.country_codes[qwe]  %>'
+    var dimmiseciseicazzo = everyplace[qweqwe]
+    everyplace[qweqwe] = true
+    // console.log(tttt)
+    tttt += 1
+    // console.log(qweqwe, dimmiseciseicazzo)
+  <% end %>
+<% end %>
+
+});
+
+</script>

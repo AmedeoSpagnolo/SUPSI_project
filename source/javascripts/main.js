@@ -11,3 +11,6 @@
 //= require generate_map
 //= require horoscope
 
+
+
+//= require everyplace
