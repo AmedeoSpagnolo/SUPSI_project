@@ -11,13 +11,21 @@
 
 <!-- map -->
 <div class="worldmap" column center-center>
-  <div id="currentsign"></div>
   <div id="map_container" class="map_container"></div>
 </div>
 
 
 <!-- tool left -->
-<div class="tools left">
+<div class="tools left" column between-start>
+  <div id="currentsign" class="currentsign"></div>
+  <div id="currentsign_svg" class="currentsign_svg"></div>
+  <div class="othersigns" row center-center wrap>
+    <% data.signs.sign.each do |s| %>
+      <div class="othersigns_item <%= s %>">
+        <%= load_svg(s) %>
+      </div>
+    <% end %>
+  </div>
 </div>
 
 
