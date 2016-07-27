@@ -8,7 +8,7 @@ $('#currentsign').html(app.sign)
   //
 
   var dataset = createdataset()
-
+  console.log(dataset)
   // 
   // render map
   //
@@ -79,7 +79,9 @@ function createdataset(){
     <% data.countryscope.countries.each do |iter| %>
       <% data.countryscope.countries[iter[0]].each do |country| %>
         series.push([
-          '<%= data.country_codes["#{country[:place]}"] %>', app.affinity['<%= iter[0] %>'][app.sign]
+          '<%= data.country_codes["#{country[:place]}"] %>', 
+          app.affinity['<%= iter[0] %>'][app.sign],
+          "<%= country[:place]%>"
         ])
       <% end %>
     <% end %>
@@ -95,12 +97,16 @@ function createdataset(){
     var paletteScale = d3.scale.linear()
             .domain([minValue,maxValue])
             .range(["#d3d3d3","#02386F"]); // blue color
+
+    var radiusScale = d3.scale.linear()
+            .domain([minValue,maxValue])
+            .range([2, 20]);
     // fill dataset in appropriate format
     series.forEach(function(item){ //
         // item example value ["USA", 70]
         var iso = item[0],
-            value = item[1];
-            country = item[2]
+            value = item[1],
+            country = item[2];
         dataset[iso] = { numberOfThings: value, fillColor: paletteScale(value), country: country};
 
     });
