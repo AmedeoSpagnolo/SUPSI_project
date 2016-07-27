@@ -1,42 +1,44 @@
+
 $( document ).ready(function() {
+
+$('#currentsign').html(app.sign)
 
   //
   // fake dataset
   //
-  var dataset = createdataset(color_virgo_countries())
-  // var dataset = color_with_fake_data()
-  console.log('dataset', dataset)
+
+  var dataset = createdataset()
 
   // 
   // render map
   //
   var datamap = new Datamap({
-    element: document.getElementById('container'),
+    element: document.getElementById('map_container'),
     projection: 'mercator', // big world map
-    fills: { 
-      defaultFill: '#F5F5F5',
-      'bubbles': 'red' },
     data: dataset,
-    geographyConfig: {
-      borderColor: '#DEDEDE',
-      highlightBorderWidth: 2,
-      // don't change color on mouse hover
-      highlightFillColor: function(geo) {
-          return geo['fillColor'] || '#F5F5F5';
-      },
-      // only change border
-      highlightBorderColor: '#B7B7B7',
-      // show desired information in tooltip
-      popupTemplate: function(geo, data) {
-          // don't show tooltip if country don't present in dataset
-          if (!data) { return ; }
-          // tooltip content
-          return ['<div class="hoverinfo">',
-              '<strong>', geo.properties.name, '</strong>',
-              '<br>Count: <strong>', data.numberOfThings, '</strong>',
-              '</div>'].join('');
-      }
+    responsive: true,
+    fills: { 
+      defaultFill: 'lightgrey',
+      'bubbles': 'red' 
     },
+    geographyConfig: {
+      borderWidth: 1,
+      borderColor: 'white',
+      highlightOnHover: false
+      // popupTemplate: function(geo, datamap) {
+      //     if (!datamap) { return ; }
+      //     return ['<div class="hoverinfo">',
+      //         '<strong>', geo.properties.name, '</strong>',
+      //         '<br>Count: <strong>', datamap.numberOfThings, '</strong>',
+      //         '</div>'].join('');
+      // }
+    }
+
+
+  })
+
+  $(window).on('resize', function(){
+    datamap.resize()
   })
 
   datamap.bubbles(create_bubbles(dataset))
@@ -69,67 +71,38 @@ function create_bubbles(dataset){
   return bubbleArray;
 }
 
-function color_with_fake_data(){
-	// example data from server
-    var series = [["USA",90],["BLZ",90],["RUS",90],["RWA",90],["SRB",90],["TLS",90],["REU",90],["TKM",90],["TJK",90],["ROU",90],["TKL",90],["GNB",90],["GUM",90],["GTM",90],["SGS",90],["GRC",90],["GNQ",90],["GLP",90],["JPN",90],["GUY",90],["GGY",90],["GUF",90],["GEO",90],["GRD",90],["GBR",90],["GAB",90],["SLV",90],["GIN",90],["GMB",90],["GRL",90],["ERI",90],["MNE",90],["MDA",90],["MDG",90],["MAF",90],["MAR",90],["MCO",90],["UZB",90],["MMR",90],["MLI",90],["MAC",90],["MNG",90],["MHL",90],["MKD",90],["MUS",90],["MLT",90],["MWI",90],["MDV",90],["MTQ",90],["MNP",90],["MSR",90],["MRT",90],["IMN",90],["UGA",90],["TZA",90],["MYS",90],["MEX",90],["ISR",90],["FRA",90],["IOT",90],["SHN",90],["FIN",90],["FJI",90],["FLK",90],["FSM",90],["FRO",90],["NIC",90],["NLD",90],["NOR",90],["NAM",90],["VUT",90],["NCL",90],["NER",90],["NFK",90],["NGA",90],["NZL",90],["NPL",90],["NRU",90],["NIU",90],["COK",90],["XKX",90],["CIV",90],["CHE",90],["COL",90],["CHN",90],["CMR",90],["CHL",90],["CCK",90],["CAN",90],["COG",90],["CAF",90],["COD",90],["CZE",90],["CYP",90],["CXR",90],["CRI",90],["CUW",90],["CPV",90],["CUB",90],["SWZ",90],["SYR",90],["SXM",90]];
+
+function createdataset(){
     
-    // Datamaps expect data in format:
-    // { "USA": { "fillColor": "#42a844", numberOfWhatever: 75},
-    //   "FRA": { "fillColor": "#8dc386", numberOfWhatever: 43 } }
-    var dataset = {};
-    // We need to colorize every country based on "numberOfWhatever"
-    // colors should be uniq for every value.
-    // For this purpose we create palette(using min/max series-value)
-    var onlyValues = series.map(function(obj){ return obj[1]; });
-    var minValue = Math.min.apply(null, onlyValues),
-            maxValue = Math.max.apply(null, onlyValues);
-    // create color palette function
-    // color can be whatever you wish
-    var paletteScale = d3.scale.linear()
-            .domain([minValue,maxValue])
-            .range(["#EFEFFF","#02386F"]); // blue color
-    // fill dataset in appropriate format
-    series.forEach(function(item){ //
-        // item example value ["USA", 70]
-        var iso = item[0],
-                value = item[1];
-        dataset[iso] = { numberOfThings: value, fillColor: "#02386F" };
-    });
-    return dataset
-}
+    var series = []
+
+    <% data.countryscope.countries.each do |iter| %>
+      <% data.countryscope.countries[iter[0]].each do |country| %>
+        series.push([
+          '<%= data.country_codes["#{country[:place]}"] %>', app.affinity['<%= iter[0] %>'][app.sign]
+        ])
+      <% end %>
+    <% end %>
 
 
-function color_virgo_countries(){
-  var virgo = []
-  <% data.countryscope.countries['Virgo'].each do |country|%>
-    virgo.push([
-      '<%= data.country_codes["#{country[:place]}"] %>', 700, '<%= country[:place]%>'
-    ])
-  <% end %>
-  console.log('virgo', virgo)
-  return virgo
-}
-
-
-function createdataset(series){
-    
     var dataset = {};
 
     var onlyValues = series.map(function(obj){ return obj[1]; });
     var minValue = Math.min.apply(null, onlyValues),
-            maxValue = Math.max.apply(null, onlyValues);
+        maxValue = Math.max.apply(null, onlyValues);
     // create color palette function
     // color can be whatever you wish
     var paletteScale = d3.scale.linear()
             .domain([minValue,maxValue])
-            .range(["#EFEFFF","#02386F"]); // blue color
+            .range(["#d3d3d3","#02386F"]); // blue color
     // fill dataset in appropriate format
     series.forEach(function(item){ //
         // item example value ["USA", 70]
         var iso = item[0],
             value = item[1];
             country = item[2]
-        dataset[iso] = { numberOfThings: value, fillColor: 'black', country: country};
+        dataset[iso] = { numberOfThings: value, fillColor: paletteScale(value), country: country};
+
     });
     return dataset
 }

@@ -1,13 +1,14 @@
 signs:
-  - Capricorn 
-  - Aquarius 
-  - Pisces 
-  - Aries 
-  - Gemini 
-  - Taurus 
-  - Cancer 
-  - Leo 
-  - Virgo 
-  - Libra 
-  - Scorpio 
-  - Sagittarius
+  - aries
+  - taurus
+  - gemini
+  - cancer
+  - leo
+  - virgo
+  - libra
+  - scorpio
+  - sagittarius
+  - capricorn
+  - aquarius
+  - pisces
+  

@@ -1,4 +1,57 @@
-/* line 1, home.sass */
-#container {
-  width: 800px;
-  height: 400px; }
+/* line 3, home.sass */
+.home {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: lightgray;
+  font-weight: bold; }
+  /* line 14, home.sass */
+  .home .wrap .lable {
+    font-size: 30px; }
+  /* line 16, home.sass */
+  .home .wrap .oroscope {
+    opacity: 0;
+    max-width: 40rem; }
+  /* line 19, home.sass */
+  .home .wrap .link_to_map {
+    opacity: 0; }
+  /* line 21, home.sass */
+  .home .wrap .birth_input {
+    color: orange;
+    position: relative;
+    opacity: 1;
+    cursor: pointer; }
+    /* line 26, home.sass */
+    .home .wrap .birth_input:hover {
+      opacity: 0.5; }
+    /* line 28, home.sass */
+    .home .wrap .birth_input:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: orange;
+      bottom: -2px;
+      left: 0; }
+  /* line 40, home.sass */
+  .home .wrap .link_to_map {
+    color: orange;
+    position: relative;
+    opacity: 1;
+    cursor: pointer; }
+    /* line 45, home.sass */
+    .home .wrap .link_to_map:hover {
+      opacity: 0.5; }
+    /* line 47, home.sass */
+    .home .wrap .link_to_map:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: orange;
+      bottom: -2px;
+      left: 0; }

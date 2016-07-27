@@ -1,13 +1,45 @@
-<br>
-<br>
-<div id="container" style="position: relative; width: 700px; height: 700px;"></div>
-<h1>countries</h1>
-<% data.countryscope.countries.each do |sign| %>
-  <h2><%= sign[0] %></h2>
-  <% sign[1].each do |pla| %>
-    <br>
-    <%= data.country_codes[pla[:place]] %>
-    <b bdate="<%= pla[:date] %>"></b>
+<script type="text/javascript">
+  <% csv_data('Affinity_matchings_table').map.with_index do |x, i| %>
+    app.affinity['<%= x[0] %>'] = {}
+    <% x[1].each do |key, value| %>
+      app.affinity['<%= x[0] %>']['<%= key %>'] = '<%= value %>'
+    <% end %>
+  <% end %>
+</script>
+
+<div class="worldmap" column center-center>
+  <div id="currentsign"></div>
+  <div id="map_container" class="map_container"></div>
+</div>
+
+
+<script>
+
+function getSize (obj) {
+    var size = 0, key;
+    for (key in obj) {
+        if (obj.hasOwnProperty(key)) size++;
+    }
+    return size;
+};
+
+$( document ).ready(function() {
+
+
+// console.log(getSize(everyplace))
+var tttt = 0
+<% data.countryscope.countries.each do |e| %>
+  <% (e[1].length).times do |iter| %>
+  <% qwe =  e[1][iter][:place] %>
+  var qweqwe = '<%= data.country_codes[qwe]  %>'
+    var dimmiseciseicazzo = everyplace[qweqwe]
+    everyplace[qweqwe] = true
+    // console.log(tttt)
+    tttt += 1
+    // console.log(qweqwe, dimmiseciseicazzo)
   <% end %>
 <% end %>
 
+});
+
+</script>
