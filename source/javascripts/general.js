@@ -1,4 +1,4 @@
   var app = {
-    sign: 'leo',
+    sign: '',
     affinity: {}
   }
