@@ -12,6 +12,7 @@ $( document ).ready(function() {
 
   $('.star_selection').on('click', function(){
     app.sign = $(this).attr('selection')
+    $('#link_to_second_page').attr('href', '<%= "/#{I18n.locale}/worldmap?sign=" %>'+ app.sign)
     $('#sign').html(app.sign)
     closeModal()
   })
