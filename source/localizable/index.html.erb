@@ -1,3 +1,12 @@
+<script type="text/javascript">
+  <% csv_data('Affinity_matchings_table').map.with_index do |x, i| %>
+    app.affinity['<%= x[0] %>'] = {}
+    <% x[1].each do |key, value| %>
+      app.affinity['<%= x[0] %>']['<%= key %>'] = '<%= value %>'
+    <% end %>
+  <% end %>
+</script>
+
 <div class="home" column center-center>
   <div class="wrap">
     <div class="lable" column center-center>
@@ -5,10 +14,48 @@
         <span>
           No matter where you were born,<br>only the stars define where you belong.<br>All the
         </span>
-        <span class="star_input" id="sign">
-          star signs
-          <div class="modal" id="modal">
-            amedeo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore suscipit nemo numquam ad voluptate, necessitatibus, aliquam libero placeat quidem, itaque nisi expedita nobis quam consequatur veniam illo eveniet ducimus non.
+        <span class="star_input">
+          <span class="sign" id="sign">star signs</span>
+          <div class="modal" id="modal" column start-center>
+            <div class="star_selection" id="star_selectio">
+              aries
+            </div>
+            <div class="star_selection" id="star_selectio">
+              taurus
+            </div>
+            <div class="star_selection" id="star_selectio">
+              gemini
+            </div>
+            <div class="star_selection" id="star_selectio">
+              cancer
+            </div>
+            <div class="star_selection" id="star_selectio">
+              leo
+            </div>
+            <div class="star_selection" id="star_selectio">
+              virgo
+            </div>
+            <div class="star_selection" id="star_selectio">
+              libra
+            </div>
+            <div class="star_selection" id="star_selectio">
+              scorpio
+            </div>
+            <div class="star_selection" id="star_selectio">
+              sagittarius
+            </div>
+            <div class="star_selection" id="star_selectio">
+              capricorn
+            </div>
+            <div class="star_selection" id="star_selectio">
+              aquarius
+            </div>
+            <div class="star_selection" id="star_selectio">
+              pisces
+            </div>
+  
+
+
           </div>
         </span>
         <span>
@@ -22,4 +69,5 @@
       </div>
     </div>
   </div>
+  <div class="bg_hover" id="bg_hover"></div>
 </div>
