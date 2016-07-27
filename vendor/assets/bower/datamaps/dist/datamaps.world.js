@@ -514,6 +514,9 @@
       .enter()
         .append('svg:circle')
         .attr('class', 'datamaps-bubble')
+        .attr('id', function(datum){
+          return datum.country;
+        })
         .attr('cx', function ( datum ) {
           var latLng;
           if ( datumHasCoords(datum) ) {

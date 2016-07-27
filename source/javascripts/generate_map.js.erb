@@ -47,12 +47,16 @@ $('#currentsign').html(app.sign)
 
   datamap.bubbles(create_bubbles(dataset))
 
-  // d3.select('svg').append("line")          // attach a line
-  //   .style("stroke", "black")  // colour the line
-  //   .attr("x1", 584.2897777777778)     // x position of the first end of the line
-  //   .attr("y1", 533.7501334293254)      // y position of the first end of the line
-  //   .attr("x2", 300)     // x position of the second end of the line
-  //   .attr("y2", 150);    // y position of the second end of the line   
+  d3.select('svg').append("line")          // attach a line
+    .style("stroke", "black")  // colour the line
+    .attr("x1", function(){
+        return $('#Mongolia').attr('cx')
+    })     // x position of the first end of the line
+    .attr("y1", function(){
+        return $('#Mongolia').attr('cy')
+    })      // y position of the first end of the line
+    .attr("x2", 300)     // x position of the second end of the line
+    .attr("y2", 150);    // y position of the second end of the line   
 })
 
 var centrObj = {}
@@ -66,7 +70,8 @@ function create_bubbles(dataset){
       'latitude': centrObj[dataset[d].country].lat,
       'longitude': centrObj[dataset[d].country].lng,
       'radius' : dataset[d].radius,
-      'fillKey': 'bubbles'
+      'fillKey': 'bubbles',
+      'country': dataset[d].country
     })
   }
 
@@ -104,14 +109,12 @@ function createdataset(){
             .domain([minValue,maxValue])
             .range([1, 5]);
     // fill dataset in appropriate format
-    console.log('min', minValue, 'max', maxValue)
     series.forEach(function(item){ //
         // item example value ["USA", 70]
         
         var iso = item[0],
             value = item[1],
             country = item[2];
-        console.log(radiusScale(value))
         dataset[iso] = { 
           numberOfThings: value, 
           fillColor: paletteScale(value), 
