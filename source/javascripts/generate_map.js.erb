@@ -19,7 +19,7 @@ $('#currentsign').html(app.sign)
     responsive: true,
     fills: { 
       defaultFill: 'lightgrey',
-      'bubbles': 'red' 
+      'bubbles': 'yellow' 
     },
     geographyConfig: {
       borderWidth: 1,
@@ -32,7 +32,11 @@ $('#currentsign').html(app.sign)
       //         '<br>Count: <strong>', datamap.numberOfThings, '</strong>',
       //         '</div>'].join('');
       // }
-    }
+    },
+     bubblesConfig: {
+        borderWidth: 0,
+        popupOnHover: true, // True to show the popup while hovering
+      }
 
 
   })
@@ -61,7 +65,7 @@ function create_bubbles(dataset){
     bubbleArray.push({
       'latitude': centrObj[dataset[d].country].lat,
       'longitude': centrObj[dataset[d].country].lng,
-      'radius' : 4,
+      'radius' : dataset[d].radius,
       'fillKey': 'bubbles'
     })
   }
@@ -98,14 +102,22 @@ function createdataset(){
 
     var radiusScale = d3.scale.linear()
             .domain([minValue,maxValue])
-            .range([2, 20]);
+            .range([1, 5]);
     // fill dataset in appropriate format
+    console.log('min', minValue, 'max', maxValue)
     series.forEach(function(item){ //
         // item example value ["USA", 70]
+        
         var iso = item[0],
             value = item[1],
             country = item[2];
-        dataset[iso] = { numberOfThings: value, fillColor: paletteScale(value), country: country};
+        console.log(radiusScale(value))
+        dataset[iso] = { 
+          numberOfThings: value, 
+          fillColor: paletteScale(value), 
+          country: country, 
+          radius: radiusScale(value)
+        }
 
     });
     return dataset
