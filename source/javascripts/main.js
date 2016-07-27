@@ -15,3 +15,4 @@
 
 // data
 //= require everyplace
+//= require mouseposition
