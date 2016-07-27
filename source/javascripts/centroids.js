@@ -1,4 +1,4 @@
-[{
+var centroids = [{
     "lat": "12.5156286292",
     "country": "Aruba",
     "lng": "-69.9756409642",
@@ -6,7 +6,7 @@
     "img": "AA.png"
 }, {
     "lat": "17.2798156269",
-    "country": "Antigua & Barbuda",
+    "country": "Antigua and Barbuda",
     "lng": "-61.791237924",
     "fips": "AC",
     "img": "AC.png"
@@ -126,7 +126,7 @@
     "img": "BE.png"
 }, {
     "lat": "24.2011282537",
-    "country": "The Bahamas",
+    "country": "Bahamas",
     "lng": "-76.5466239857",
     "fips": "BF",
     "img": "BF.png"
@@ -143,14 +143,8 @@
     "fips": "BH",
     "img": "BH.png"
 }, {
-    "lat": "44.1681150713",
-    "country": "Bosnia & Herzegovina",
-    "lng": "17.7865309991",
-    "fips": "BK",
-    "img": "BK.png"
-}, {
     "lat": "-16.7146100726",
-    "country": "Bolivia",
+    "country": "Bolivia, Plurinational State of",
     "lng": "-64.6709324867",
     "fips": "BL",
     "img": "BL.png"
@@ -174,7 +168,7 @@
     "img": "BO.png"
 }, {
     "lat": "-8.9182158489",
-    "country": "Solomon Is.",
+    "country": "Solomon Islands",
     "lng": "159.6343165388",
     "fips": "BP",
     "img": "BP.png"
@@ -198,13 +192,13 @@
     "img": "BU.png"
 }, {
     "lat": "-54.421904825",
-    "country": "Bouvet I.",
+    "country": "Bouvet Island",
     "lng": "3.4125220127",
     "fips": "BV",
     "img": "BV.png"
 }, {
     "lat": "4.521445464",
-    "country": "Brunei",
+    "country": "Brunei Darussalam",
     "lng": "114.7611010271",
     "fips": "BX",
     "img": "BX.png"
@@ -246,7 +240,7 @@
     "img": "CF.png"
 }, {
     "lat": "-2.8762350964",
-    "country": "Congo, DRC",
+    "country": "Congo, the Democratic Republic of the",
     "lng": "23.6550057356",
     "fips": "CG",
     "img": "CG.png"
@@ -264,13 +258,13 @@
     "img": "CI.png"
 }, {
     "lat": "19.3086622633",
-    "country": "Cayman Is.",
+    "country": "Cayman Islands",
     "lng": "-81.2384512433",
     "fips": "CJ",
     "img": "CJ.png"
 }, {
     "lat": "-12.1712486884",
-    "country": "Cocos Is.",
+    "country": "Cocos (Keeling) Islands",
     "lng": "96.8368860504",
     "fips": "CK",
     "img": "CK.png"
@@ -294,7 +288,7 @@
     "img": "CO.png"
 }, {
     "lat": "15.0885181891",
-    "country": "Northern Mariana Is.",
+    "country": "Northern Mariana Islands",
     "lng": "145.6792177533",
     "fips": "CQ",
     "img": "CQ.png"
@@ -318,13 +312,13 @@
     "img": "CU.png"
 }, {
     "lat": "15.9789657676",
-    "country": "Cape Verde",
+    "country": "Cabo Verde",
     "lng": "-23.9677869856",
     "fips": "CV",
     "img": "CV.png"
 }, {
     "lat": "-20.9340103596",
-    "country": "Cook Is.",
+    "country": "Cook Islands",
     "lng": "-158.9089498078",
     "fips": "CW",
     "img": "CW.png"
@@ -352,12 +346,6 @@
     "lng": "-61.3557578133",
     "fips": "DO",
     "img": "DO.png"
-}, {
-    "lat": "-0.3860174663",
-    "country": "Jarvis I.",
-    "lng": "-160.0272248207",
-    "fips": "DQ",
-    "img": "DQ.png"
 }, {
     "lat": "18.894447574",
     "country": "Dominican Republic",
@@ -438,19 +426,19 @@
     "img": "FJ.png"
 }, {
     "lat": "-51.7371165184",
-    "country": "Falkland Is.",
+    "country": "Falkland Islands (Malvinas)",
     "lng": "-59.36329821",
     "fips": "FK",
     "img": "FK.png"
 }, {
     "lat": "6.492370489",
-    "country": "Micronesia",
+    "country": "Micronesia, Federated States of",
     "lng": "159.4042471653",
     "fips": "FM",
     "img": "FM.png"
 }, {
     "lat": "62.0310655581",
-    "country": "Faroe Is.",
+    "country": "Faroe Islands",
     "lng": "-6.8841095464",
     "fips": "FO",
     "img": "FO.png"
@@ -461,12 +449,6 @@
     "fips": "FP",
     "img": "FP.png"
 }, {
-    "lat": "0.2190971722",
-    "country": "Baker I.",
-    "lng": "-176.4616444906",
-    "fips": "FQ",
-    "img": "FQ.png"
-}, {
     "lat": "46.564502139",
     "country": "France",
     "lng": "2.5519552759",
@@ -474,13 +456,13 @@
     "img": "FR.png"
 }, {
     "lat": "-49.1917939992",
-    "country": "French S. / Antarctic Lands",
+    "country": "French Southern Territories",
     "lng": "68.8619203878",
     "fips": "FS",
     "img": "FS.png"
 }, {
     "lat": "13.4526500812",
-    "country": "The Gambia",
+    "country": "Gambia",
     "lng": "-15.3866392529",
     "fips": "GA",
     "img": "GA.png"
@@ -533,12 +515,6 @@
     "fips": "GM",
     "img": "GM.png"
 }, {
-    "lat": "-11.5662229194",
-    "country": "Glorioso Is.",
-    "lng": "47.2909482897",
-    "fips": "GO",
-    "img": "GO.png"
-}, {
     "lat": "16.2034605638",
     "country": "Guadeloupe",
     "lng": "-61.5367445054",
@@ -575,12 +551,6 @@
     "fips": "GY",
     "img": "GY.png"
 }, {
-    "lat": "31.4018653858",
-    "country": "Gaza Strip",
-    "lng": "34.3727499454",
-    "fips": "GZ",
-    "img": "GZ.png"
-}, {
     "lat": "18.9416084612",
     "country": "Haiti",
     "lng": "-72.679458966",
@@ -588,7 +558,7 @@
     "img": "HA.png"
 }, {
     "lat": "-53.0913325875",
-    "country": "Heard I. & McDonald Is.",
+    "country": "Heard Island and McDonald Islands",
     "lng": "73.4983733435",
     "fips": "HM",
     "img": "HM.png"
@@ -598,12 +568,6 @@
     "lng": "-86.6191449608",
     "fips": "HO",
     "img": "HO.png"
-}, {
-    "lat": "0.8000965796",
-    "country": "Howland I.",
-    "lng": "-176.6374175602",
-    "fips": "HQ",
-    "img": "HQ.png"
 }, {
     "lat": "45.0511621486",
     "country": "Croatia",
@@ -666,7 +630,7 @@
     "img": "IT.png"
 }, {
     "lat": "7.6315331668",
-    "country": "Cote d'Ivory",
+    "country": "Côte d'Ivoire",
     "lng": "-5.5556193247",
     "fips": "IV",
     "img": "IV.png"
@@ -696,7 +660,7 @@
     "img": "JM.png"
 }, {
     "lat": "71.0208481107",
-    "country": "Jan Mayen",
+    "country": "Svalbard and Jan Mayen",
     "lng": "-8.4035323299",
     "fips": "JN",
     "img": "JN.png"
@@ -706,18 +670,6 @@
     "lng": "36.7867290878",
     "fips": "JO",
     "img": "JO.png"
-}, {
-    "lat": "16.7280483246",
-    "country": "Johnston Atoll",
-    "lng": "-169.5339253743",
-    "fips": "JQ",
-    "img": "JQ.png"
-}, {
-    "lat": "-17.0644908019",
-    "country": "Juan De Nova I.",
-    "lng": "42.7437456739",
-    "fips": "JU",
-    "img": "JU.png"
 }, {
     "lat": "0.5298624646",
     "country": "Kenya",
@@ -750,7 +702,7 @@
     "img": "KS.png"
 }, {
     "lat": "-10.444115262",
-    "country": "Christmas I.",
+    "country": "Christmas Island",
     "lng": "105.703698324",
     "fips": "KT",
     "img": "KT.png"
@@ -840,7 +792,7 @@
     "img": "MB.png"
 }, {
     "lat": "47.1938708614",
-    "country": "Moldova",
+    "country": "Moldova, Republic of",
     "lng": "28.4739305894",
     "fips": "MD",
     "img": "MD.png"
@@ -898,12 +850,6 @@
     "lng": "57.8707552746",
     "fips": "MP",
     "img": "MP.png"
-}, {
-    "lat": "28.2051968018",
-    "country": "Midway Is.",
-    "lng": "-177.3788154397",
-    "fips": "MQ",
-    "img": "MQ.png"
 }, {
     "lat": "20.2598513898",
     "country": "Mauritania",
@@ -966,7 +912,7 @@
     "img": "NE.png"
 }, {
     "lat": "-29.0376570493",
-    "country": "Norfolk I.",
+    "country": "Norfolk Island",
     "lng": "167.9525967968",
     "fips": "NF",
     "img": "NF.png"
@@ -1019,12 +965,6 @@
     "fips": "NS",
     "img": "NS.png"
 }, {
-    "lat": "12.1878031272",
-    "country": "Netherlands Antilles",
-    "lng": "-68.693669483",
-    "fips": "NT",
-    "img": "NT.png"
-}, {
     "lat": "12.8399054731",
     "country": "Nicaragua",
     "lng": "-85.034782707",
@@ -1044,7 +984,7 @@
     "img": "PA.png"
 }, {
     "lat": "-24.4765215459",
-    "country": "Pitcairn Is.",
+    "country": "Pitcairn",
     "lng": "-128.5932103798",
     "fips": "PC",
     "img": "PC.png"
@@ -1054,18 +994,6 @@
     "lng": "-74.3756274569",
     "fips": "PE",
     "img": "PE.png"
-}, {
-    "lat": "16.7016881529",
-    "country": "Paracel Is.",
-    "lng": "112.3755588649",
-    "fips": "PF",
-    "img": "PF.png"
-}, {
-    "lat": "10.5629339971",
-    "country": "Spratly Is.",
-    "lng": "115.59794854",
-    "fips": "PG",
-    "img": "PG.png"
 }, {
     "lat": "29.9670223543",
     "country": "Pakistan",
@@ -1115,14 +1043,8 @@
     "fips": "QA",
     "img": "QA.png"
 }, {
-    "lat": "-21.1216611735",
-    "country": "Reunion",
-    "lng": "55.5381791919",
-    "fips": "RE",
-    "img": "RE.png"
-}, {
     "lat": "7.6432342928",
-    "country": "Marshall Is.",
+    "country": "Marshall Islands",
     "lng": "168.6268293688",
     "fips": "RM",
     "img": "RM.png"
@@ -1146,7 +1068,7 @@
     "img": "RQ.png"
 }, {
     "lat": "61.9461350986",
-    "country": "Russia",
+    "country": "Russian Federation",
     "lng": "96.5776888656",
     "fips": "RS",
     "img": "RS.png"
@@ -1164,13 +1086,13 @@
     "img": "SA.png"
 }, {
     "lat": "46.930916536",
-    "country": "St. Pierre & Miquelon",
+    "country": "Saint Pierre and Miquelon",
     "lng": "-56.3061006505",
     "fips": "SB",
     "img": "SB.png"
 }, {
     "lat": "17.3261892751",
-    "country": "St. Kitts & Nevis",
+    "country": "Saint Kitts and Nevis",
     "lng": "-62.7535175679",
     "fips": "SC",
     "img": "SC.png"
@@ -1194,7 +1116,7 @@
     "img": "SG.png"
 }, {
     "lat": "-15.9615447817",
-    "country": "St. Helena",
+    "country": "Saint Helena, Ascension and Tristan da Cunha",
     "lng": "-5.7171496994",
     "fips": "SH",
     "img": "SH.png"
@@ -1254,7 +1176,7 @@
     "img": "SU.png"
 }, {
     "lat": "78.8636572818",
-    "country": "Svalbard",
+    "country": "Svalbard and Jan Mayen",
     "lng": "18.4835424111",
     "fips": "SV",
     "img": "SV.png"
@@ -1266,7 +1188,7 @@
     "img": "SW.png"
 }, {
     "lat": "-54.4881451569",
-    "country": "South Georgia",
+    "country": "South Georgia and the South Sandwich Islands",
     "lng": "-36.3823745102",
     "fips": "SX",
     "img": "SX.png"
@@ -1284,7 +1206,7 @@
     "img": "SZ.png"
 }, {
     "lat": "10.468643096",
-    "country": "Trinidad & Tobago",
+    "country": "Trinidad and Tobago",
     "lng": "-61.2531756773",
     "fips": "TD",
     "img": "TD.png"
@@ -1302,7 +1224,7 @@
     "img": "TI.png"
 }, {
     "lat": "21.8366876656",
-    "country": "Turks & Caicos Is.",
+    "country": "Turks and Caicos Islands",
     "lng": "-71.8129587031",
     "fips": "TK",
     "img": "TK.png"
@@ -1314,7 +1236,7 @@
     "img": "TL.png"
 }, {
     "lat": "-8.8229773563",
-    "country": "East Timor",
+    "country": "Timor-Leste",
     "lng": "125.8536726188",
     "fips": "TM",
     "img": "TM.png"
@@ -1332,7 +1254,7 @@
     "img": "TO.png"
 }, {
     "lat": "0.456984037",
-    "country": "Sao Tome & Principe",
+    "country": "Sao Tome and Principe",
     "lng": "6.736587813",
     "fips": "TP",
     "img": "TP.png"
@@ -1392,7 +1314,7 @@
     "img": "UP.png"
 }, {
     "lat": "45.6955770979",
-    "country": "United States",
+    "country": "United States of America",
     "lng": "-112.4915093261",
     "fips": "US",
     "img": "US.png"
@@ -1416,7 +1338,7 @@
     "img": "UZ.png"
 }, {
     "lat": "13.2548078202",
-    "country": "St. Vincent & the Grenadines",
+    "country": "Saint Vincent and the Grenadines",
     "lng": "-61.1937651967",
     "fips": "VC",
     "img": "VC.png"
@@ -1428,25 +1350,25 @@
     "img": "VE.png"
 }, {
     "lat": "18.4445876102",
-    "country": "British Virgin Is.",
+    "country": "Virgin Islands, British",
     "lng": "-64.5304257485",
     "fips": "VI",
     "img": "VI.png"
 }, {
     "lat": "16.6592573364",
-    "country": "Vietnam",
+    "country": "Viet Nam",
     "lng": "106.301473618",
     "fips": "VM",
     "img": "VM.png"
 }, {
     "lat": "17.9051117732",
-    "country": "Virgin Is.",
+    "country": "Virgin Islands, U.S.",
     "lng": "-64.8070331619",
     "fips": "VQ",
     "img": "VQ.png"
 }, {
     "lat": "41.903986718",
-    "country": "Vatican City",
+    "country": "Vatican",
     "lng": "12.4513576326",
     "fips": "VT",
     "img": "VT.png"
@@ -1457,14 +1379,8 @@
     "fips": "WA",
     "img": "WA.png"
 }, {
-    "lat": "31.9466365517",
-    "country": "West Bank",
-    "lng": "35.2564175501",
-    "fips": "WE",
-    "img": "WE.png"
-}, {
     "lat": "-13.7874263999",
-    "country": "Wallis & Futuna",
+    "country": "Wallis and Futuna",
     "lng": "-177.1507759436",
     "fips": "WF",
     "img": "WF.png"
@@ -1474,12 +1390,6 @@
     "lng": "-13.1365402191",
     "fips": "WI",
     "img": "WI.png"
-}, {
-    "lat": "19.3020423877",
-    "country": "Wake I.",
-    "lng": "166.6380028031",
-    "fips": "WQ",
-    "img": "WQ.png"
 }, {
     "lat": "-13.758365248",
     "country": "Samoa",

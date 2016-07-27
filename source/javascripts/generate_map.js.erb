@@ -5,6 +5,7 @@ $( document ).ready(function() {
   //
   var dataset = createdataset(color_virgo_countries())
   // var dataset = color_with_fake_data()
+  console.log('dataset', dataset)
 
   // 
   // render map
@@ -12,7 +13,9 @@ $( document ).ready(function() {
   var datamap = new Datamap({
     element: document.getElementById('container'),
     projection: 'mercator', // big world map
-    fills: { defaultFill: '#F5F5F5' },
+    fills: { 
+      defaultFill: '#F5F5F5',
+      'bubbles': 'red' },
     data: dataset,
     geographyConfig: {
       borderColor: '#DEDEDE',
@@ -32,128 +35,39 @@ $( document ).ready(function() {
               '<strong>', geo.properties.name, '</strong>',
               '<br>Count: <strong>', data.numberOfThings, '</strong>',
               '</div>'].join('');
-      },
-      fills: {
-          defaultFill: '#f0af0a',
-          lt50: 'rgba(0,244,244,0.9)',
-          gt50: 'red'
-        },
-        
-        data: {
-          USA: {fillKey: 'lt50' },
-          RUS: {fillKey: 'lt50' },
-          CAN: {fillKey: 'lt50' },
-          BRA: {fillKey: 'gt50' },
-          ARG: {fillKey: 'gt50'},
-          COL: {fillKey: 'gt50' },
-          AUS: {fillKey: 'gt50' },
-          ZAF: {fillKey: 'gt50' },
-          MAD: {fillKey: 'gt50' }       
-        }
-    }
+      }
+    },
   })
 
+  datamap.bubbles(create_bubbles(dataset))
 
-  datamap.addPlugin('pins', function ( layer, data, options ) {  
-    var self = this,
-        fillData = this.options.fills,
-        svg = this.svg;
-
-    if ( !data || (data && !data.slice) ) {
-      throw "Datamaps Error - bubbles must be an array";
-    }
-
-    var bubbles = layer.selectAll('image.datamaps-pins').data( data, JSON.stringify );
-
-    bubbles
-      .enter()
-        .append('image')
-        .attr('class', 'datamaps-pin')
-        .attr('xlink:href', 'http://a.tiles.mapbox.com/v3/marker/pin-m+7e7e7e@2x.png')
-        .attr('height', 40)
-        .attr('width', 40)
-        .attr('id', self.id)
-        .attr('x', function ( datum ) {
-          console.log('hey')
-          var latLng;
-          if ( datumHasCoords(datum) ) {
-            latLng = self.latLngToXY(datum.latitude, datum.longitude);
-          }
-          else if ( datum.centered ) {
-            latLng = self.path.centroid(svg.select('path.' + datum.centered).data()[0]);
-          }
-          if ( latLng ) return latLng[0];
-        })
-        .attr('y', function ( datum ) {
-          var latLng;
-          if ( datumHasCoords(datum) ) {
-            latLng = self.latLngToXY(datum.latitude, datum.longitude);
-          }
-          else if ( datum.centered ) {
-            latLng = self.path.centroid(svg.select('path.' + datum.centered).data()[0]);
-          }
-          if ( latLng ) return latLng[1];;
-        })
-
-        .on('mouseover', function ( datum ) {
-          console.log('mousover!');
-          var $this = d3.select(this);
-
-          if (options.popupOnHover) {
-            console.log('going', datum)
-            self.updatePopup($this, datum, options, svg);
-          }
-        })
-        .on('mouseout', function ( datum ) {
-          var $this = d3.select(this);
-
-          if (options.highlightOnHover) {
-            //reapply previous attributes
-            var previousAttributes = JSON.parse( $this.attr('data-previousAttributes') );
-            for ( var attr in previousAttributes ) {
-              $this.style(attr, previousAttributes[attr]);
-            }
-          }
-
-          d3.selectAll('.datamaps-hoverover').style('display', 'none');
-        })
-
-
-
-    bubbles.exit()
-      .transition()
-        .delay(options.exitDelay)
-        .attr("height", 0)
-        .remove();
-
-    function datumHasCoords (datum) {
-      return typeof datum !== 'undefined' && typeof datum.latitude !== 'undefined' && typeof datum.longitude !== 'undefined';
-    }
-      
-    });
-       
-      
-       //bubbles, custom popup on hover template
-     datamap.pins([
-       {name: 'USA', latitude: 45.69, longitude: -112.49, radius: 10, fillKey: 'gt50'},
-       {name: 'Chilly', latitude: -25.32, longitude: 120.32, radius: 18, fillKey: 'lt50'},
-       {name: 'Hot again', latitude: 21.32, longitude: -84.32, radius: 8, fillKey: 'gt50'},
-      
-
-     ], {
-       popupOnHover: true,
-       popupTemplate: function(data) {
-         return "<div class='hoverinfo'>It is " + data.name + "</div>";
-       }
-     });
-
-  d3.select('svg').append("line")          // attach a line
-    .style("stroke", "black")  // colour the line
-    .attr("x1", 584.2897777777778)     // x position of the first end of the line
-    .attr("y1", 533.7501334293254)      // y position of the first end of the line
-    .attr("x2", 300)     // x position of the second end of the line
-    .attr("y2", 150);    // y position of the second end of the line   
+  // d3.select('svg').append("line")          // attach a line
+  //   .style("stroke", "black")  // colour the line
+  //   .attr("x1", 584.2897777777778)     // x position of the first end of the line
+  //   .attr("y1", 533.7501334293254)      // y position of the first end of the line
+  //   .attr("x2", 300)     // x position of the second end of the line
+  //   .attr("y2", 150);    // y position of the second end of the line   
 })
+
+var centrObj = {}
+  centroids.forEach(function(c){
+    centrObj[c.country] = c
+})
+console.log('centrObj', centrObj)
+function create_bubbles(dataset){
+  console.log('create bubbles')
+  var bubbleArray = [];
+  for (var d in dataset) {
+    bubbleArray.push({
+      'latitude': centrObj[dataset[d].country].lat,
+      'longitude': centrObj[dataset[d].country].lng,
+      'radius' : 4,
+      'fillKey': 'bubbles'
+    })
+  }
+
+  return bubbleArray;
+}
 
 function color_with_fake_data(){
 	// example data from server
@@ -189,12 +103,10 @@ function color_virgo_countries(){
   var virgo = []
   <% data.countryscope.countries['Virgo'].each do |country|%>
     virgo.push([
-      '<%= data.country_codes["#{country[:place]}"] %>', 700
+      '<%= data.country_codes["#{country[:place]}"] %>', 700, '<%= country[:place]%>'
     ])
   <% end %>
-
-  console.log(virgo)
-
+  console.log('virgo', virgo)
   return virgo
 }
 
@@ -215,8 +127,9 @@ function createdataset(series){
     series.forEach(function(item){ //
         // item example value ["USA", 70]
         var iso = item[0],
-                value = item[1];
-        dataset[iso] = { numberOfThings: value, fillColor: 'black' };
+            value = item[1];
+            country = item[2]
+        dataset[iso] = { numberOfThings: value, fillColor: 'black', country: country};
     });
     return dataset
 }

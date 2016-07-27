@@ -5,6 +5,7 @@
 //= require topojson
 //= require datamaps/dist/datamaps.world
 
+//= require centroids
 //= require global
 //= require checkdate
 //= require birthinput
