@@ -1,3 +1,12 @@
+<script type="text/javascript">
+  <% csv_data('Affinity_matchings_table').map.with_index do |x, i| %>
+    app.affinity['<%= x[0] %>'] = {}
+    <% x[1].each do |key, value| %>
+      app.affinity['<%= x[0] %>']['<%= key %>'] = '<%= value %>'
+    <% end %>
+  <% end %>
+</script>
+
 <div class="home" column center-center>
   <div class="wrap">
     <div class="lable" column center-center>
@@ -5,21 +14,62 @@
         <span>
           No matter where you were born,<br>only the stars define where you belong.<br>All the
         </span>
-        <span class="star_input" id="sign">
-          star signs
-          <div class="modal" id="modal">
-            amedeo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore suscipit nemo numquam ad voluptate, necessitatibus, aliquam libero placeat quidem, itaque nisi expedita nobis quam consequatur veniam illo eveniet ducimus non.
+        <span class="star_input">
+          <span class="sign" id="sign">star signs</span>
+          <div class="modal" id="modal" column start-center>
+            <div class="star_selection" selection="aries">
+              aries
+            </div>
+            <div class="star_selection" selection="taurus">
+              taurus
+            </div>
+            <div class="star_selection" selection="gemini">
+              gemini
+            </div>
+            <div class="star_selection" selection="cancer">
+              cancer
+            </div>
+            <div class="star_selection" selection="leo">
+              leo
+            </div>
+            <div class="star_selection" selection="virgo">
+              virgo
+            </div>
+            <div class="star_selection" selection="libra">
+              libra
+            </div>
+            <div class="star_selection" selection="scorpio">
+              scorpio
+            </div>
+            <div class="star_selection" selection="sagittarius">
+              sagittarius
+            </div>
+            <div class="star_selection" selection="capricorn">
+              capricorn
+            </div>
+            <div class="star_selection" selection="aquarius">
+              aquarius
+            </div>
+            <div class="star_selection" selection="pisces">
+              pisces
+            </div>
+  
+
+
           </div>
         </span>
         <span>
           share a place in the world.
         </span>
       </div>
-      <div class="link_wrap">
-        <div class="calltoaction">Find it on the map ></div>
+      <div class="link_wrap" id="link_wrap">
+        <a href="<%= "/#{I18n.locale}/worldmap" %>">
+          <div class="calltoaction">Find it on the map ></div>
+        </a>
         <div class="hover_effect"></div>
         <div class="hover_bg"></div>
       </div>
     </div>
   </div>
+  <div class="bg_hover" id="bg_hover"></div>
 </div>

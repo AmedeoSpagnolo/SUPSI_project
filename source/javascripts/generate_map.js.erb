@@ -63,9 +63,7 @@ var centrObj = {}
   centroids.forEach(function(c){
     centrObj[c.country] = c
 })
-console.log('centrObj', centrObj)
 function create_bubbles(dataset){
-  console.log('create bubbles')
   var bubbleArray = [];
   for (var d in dataset) {
     bubbleArray.push({
