@@ -113,12 +113,20 @@
 
   <!-- info view button -->
   <div class="info_view_button" wide row between-center>
-    <div class="right_button" row center-center>1</div>
-    <div class="right_button" row center-center>2</div>
-    <div class="right_button" row center-center>3</div>
+    <% data.signs.icon.each do |s| %>
+      <div class="button_right_info">
+      <%= image_tag "#{s}.svg" , :id => s %>
+      </div>
+    <% end %>
   </div>
 </div>
 
+<!-- modal passport -->
+<div class="container_passport">
+  <%= partial "passport" %>
+</div>
+
+<div class="bg_modal" id="bg_modal"></div>
 
 <!-- footer -->
 <%= partial "footer" %>
