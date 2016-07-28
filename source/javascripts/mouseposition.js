@@ -7,5 +7,9 @@ $(document).ready(function(){
        my = (c[1] - h / 2);
     $('#info_latitude').html(parseInt(mx,10))
     $('#info_longitude').html(parseInt(my,10))
+
+    var norm = 1 / 70
+    // $('.datamaps-bubble').css("transform", "translate("+(mx * norm)+"px,"+(my * norm)+"px)")
+    
    })
 });
