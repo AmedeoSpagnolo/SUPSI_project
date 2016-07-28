@@ -95,9 +95,9 @@ function create_bubbles(dataset){
     }
     i++;
     if (centrObj[d.country]){
-    $('#country_list').append('<div class="country_text"><span id="'+ centrObj[d.country].fips +'T">'
+    $('#country_list').append('<div class="country_text" row between-center><span id="'+ centrObj[d.country].fips +'T">'
          + centrObj[d.country].country +
-          '</span><div style="width:' + (affinityScale(d.affinityValue) - 20) + 'px; height: 5px; opacity: 0.60; background-color: grey;" id="'+ centrObj[d.country].fips +'C"></div></div>');
+          '</span><div style="width:' + (affinityScale(d.affinityValue) - 20)/4 + 'px; height: 5px; opacity: 0.60; background-color: grey;" id="'+ centrObj[d.country].fips +'C"></div></div>');
     var id = '#' + centrObj[d.country].fips +'T'
     }   
   })
