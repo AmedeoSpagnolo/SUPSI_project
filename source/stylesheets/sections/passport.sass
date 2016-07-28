@@ -9,8 +9,6 @@
 
 .passport
   display: none
-  background-image: url("../../images/passport.jpg")
-  background-size: cover
   position: absolute
   height: 100%
   width: 100%
@@ -18,7 +16,38 @@
   bottom: 0
   left: 0
   right: 0
+  .bg_passport
+    position: absolute
+    height: 100%
+    width: 100%
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    &.top_bg_passport
+      position: absolute
+      background-size: cover
+      background-image: url("../../images/passport_top.png")
+      z-index: 10000
+    &.bottom_bg_passport
+      position: absolute
+      z-index: 8000
+      background-size: cover
+      background-image: url("../../images/passport_.jpg")
 
+  svg
+    position: absolute
+    height: 100%
+    width: 100%
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    transform: rotate3d(-4, -0.2, 3.8, 24deg) translate(18px, -10px) scale(0.6)
+    z-index: 9000
 .modal_passport_open
   .passport
     display: block
+
+
+// rotate3d(1.4, 1.9, -1, 204deg)
