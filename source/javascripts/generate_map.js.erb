@@ -74,6 +74,7 @@ function create_bubbles(dataset){
         'countryLong': centrObj[d.country].country,
         'depth': d.depth
       });
+      $('#country_list').append('<div>' + centrObj[d.country].country + '</div>')
     }
     else if (i > 10 && centrObj[d.country]){
       bubbleArray.push({
