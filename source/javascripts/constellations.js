@@ -82,10 +82,7 @@ var constellations =  {
  leo: [
 [
 "Venezuela",
-"Barbados"
-],[
-"Barbados",
-"Suriname"
+"Aruba"
 ],[
 "Suriname",
 "Venezuela"
@@ -102,17 +99,23 @@ var constellations =  {
 "United Arab Emirates",
 "Kenya"
 ],[
-"Lebanon",
-"Finland"
+"Mauritania",
+"Kenya"
 ],[
 "United Arab Emirates",
-"Bangladesh"
+"Kazakhstan"
 ,],[
-"Bangladesh",
+"Mongolia",
 "Laos"
 ],[
-"Bangladesh",
+"Kazakhstan",
 "Mongolia"
+],[
+"Kazakhstan",
+"Laos"
+],[
+"Micronesia, Federated States of",
+"Laos"
 ]
 ],
 //VIRGO
@@ -121,7 +124,7 @@ var constellations =  {
 [
 [
 "Samoa",
-"El Salvador"
+"Libya"
 ],[
 "El Salvador",
 "Cuba"
@@ -135,8 +138,14 @@ var constellations =  {
 "Haiti",
 "Cameroon"
 ],[
-"Cameroon",
+"Myanmar",
 "Sudan"
+],[
+"Myanmar",
+"Brunei Darussalam"
+],[
+"Brunei Darussalam",
+"Indonesia"
 ],[
 "Sudan",
 "Libya"
@@ -147,30 +156,39 @@ var constellations =  {
 "United Kingdom",
 "Poland"
 ],[
-"Poland",
+"Myanmar",
 "Romania"
 ],[
-"Romania",
-"Indonesia"
+"Poland",
+"Slovakia"
+],[
+"Slovakia",
+"Slovenia"
+],[
+"Slovakia",
+"Romania"
 ]],
 // CANCER
 
  cancer: [
 [
+"American Samoa",
+"Honduras"
+],[
 "Honduras",
 "Panama"
 ],[
 "Panama",
 "Saint Vincent and the Grenadines"
 ],[
-"Saint Vincent and the Grenadines",
-"Dominica"
-],[
-"Dominica",
+"Turks and Caicos Islands",
 "Dominican Republic"
 ],[
 "Saint Vincent and the Grenadines",
-"Brazil"
+"Dominican Republic"
+],[
+"Honduras",
+"Dominican Republic"
 ],[
 "Saint Vincent and the Grenadines",
 "Equatorial Guinea"
@@ -185,7 +203,7 @@ var constellations =  {
 "Turkey"
 ],[
 "Turkey",
-"Belgium"
+"Turkmenistan"
 ]
 ],
 // CAPRICORN
@@ -268,14 +286,8 @@ var constellations =  {
 // AQUARIUS
  aquarius: [
 [
-"Nicaragua",
+"Faroe Islands",
 "Portugal"
-],[
-"Portugal",
-"Guinea"
-],[
-"Guinea",
-"Nigeria"
 ],[
 "Nigeria",
 "Portugal"
@@ -286,9 +298,6 @@ var constellations =  {
 "Uganda",
 "Swaziland"
 ],[
-"Swaziland",
-"Lesotho"
-],[
 "Uganda",
 "Saudi Arabia"
 ],[
@@ -296,22 +305,25 @@ var constellations =  {
 "Syria"
 ],[
 "Portugal",
-"France"
+"Guinea-Bissau"
+],[
+"Saint Helena, Ascension and Tristan da Cunha",
+"Guinea-Bissau"
 ],[
 "Saudi Arabia",
+"Palau"
+],[
+"Palau",
 "Tuvalu"
 ]
 ],
 // ARIES
  aries: [
 [
-"Venezuela",
-"Barbados"
-],[
-"Barbados",
-"Suriname"
-],[
 "Suriname",
+"Venezuela"
+],[
+"Aruba",
 "Venezuela"
 ],[
 "Suriname",
@@ -324,18 +336,21 @@ var constellations =  {
 "Lebanon"
 ],[
 "Lebanon",
-"Finland"
+"United Arab Emirates"
 ],[
-"Lebanon",
+"Kenya",
 "United Arab Emirates"
 ],[
 "United Arab Emirates",
 "Mongolia"
 ],[
 "Mongolia",
-"Bangladesh"
+"Kazakhstan"
 ],[
 "Mongolia",
+"Laos"
+],[
+"Micronesia, Federated States of",
 "Laos"
 ]
 ],
@@ -361,8 +376,11 @@ var constellations =  {
 "Romania",
 "Poland"
 ],[
-"Sudan",
+"Romania",
 "Myanmar"
+],[
+"Sudan",
+"Samoa"
 ],[
 "Myanmar",
 "Brunei Darussalam"
@@ -377,42 +395,71 @@ var constellations =  {
 // SCORPIO
  scorpio: [
 [
-"United States of America",
-"Sao Tome and Principe"
+"Saint Pierre and Miquelon",
+"Virgin Islands, U.S."
 ],[
-"Sao Tome and Principe",
-"Rwanda"
+"Saint Pierre and Miquelon",
+"Isle of Man"
 ],[
-"Rwanda",
-"Mozambique"
+"Isle of Man",
+"Croatia"
 ],[
-"Mozambique",
-"Seychelles"
+"Croatia",
+"Belarus"
 ],[
-"Seychelles",
-"Somalia"
+"Croatia",
+"Congo, the Democratic Republic of the"
 ],[
-"Somalia",
-"Rwanda"
-],[
-"Somalia",
-"Oman"
-],[
-"Oman",
-"Thailand"
-],[
-"Thailand",
+"Belarus",
 "Viet Nam"
 ],[
-"Viet Nam",
-"Philippines"
+"Belarus",
+"Russian Federation"
 ],[
-"Philippines",
-"Solomon Islands"
+"Viet Nam",
+"Northern Mariana Islands"
+],[
+"Viet Nam",
+"New Caledonia"
+]
+],
+
+pisces: [
+[
+"American Samoa",
+"Honduras"
+],[
+"Honduras",
+"Panama"
+],[
+"Panama",
+"Saint Vincent and the Grenadines"
+],[
+"Saint Vincent and the Grenadines",
+"Dominican Republic"
+],[
+"Dominican Republic",
+"Turks and Caicos Islands"
+],[
+"Saint Vincent and the Grenadines",
+"Equatorial Guinea"
+],[
+"Equatorial Guinea",
+"Zambia"
+],[
+"Zambia",
+"South Africa"
+],[
+"Equatorial Guinea",
+"Turkey"
+],[
+"Turkmenistan",
+"Turkey"
 ]
 ],
 }
 // PISCES
+
 
 
 
