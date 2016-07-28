@@ -18,7 +18,7 @@ $( document ).ready(function() {
     responsive: true,
     fills: { 
       defaultFill: 'lightgrey',
-      'bubbles': 'red' 
+      'bubbles': 'yellow' 
     },
     geographyConfig: {
       borderWidth: 1,
@@ -71,7 +71,19 @@ function create_bubbles(dataset){
         'radius' : d.radius,
         'fillKey': 'bubbles',
         'country': centrObj[d.country].fips,
-        'countryLong': centrObj[d.country].country
+        'countryLong': centrObj[d.country].country,
+        'depth': d.depth
+      });
+    }
+    else if (i > 10 && centrObj[d.country]){
+      bubbleArray.push({
+        'latitude': centrObj[d.country].lat,
+        'longitude': centrObj[d.country].lng,
+        'radius' : 2,
+        'fillKey': 'bubbles',
+        'country': centrObj[d.country].fips,
+        'countryLong': centrObj[d.country].country,
+        'depth': d.depth
       });
     }
     i++;
@@ -95,7 +107,8 @@ function drawLines(){
     .attr("x1", star1X)     // x position of the first end of the line
     .attr("y1", star1Y)      // y position of the first end of the line
     .attr("x2", star2X)     // x position of the second end of the line
-    .attr("y2", star2Y);    // y position of the second end of the line
+    .attr("y2", star2Y)    // y position of the second end of the line
+    .attr("depth", 10);
   });
 
 }
@@ -134,6 +147,10 @@ function createdataset(){
     .domain([minValue,maxValue])
     .range([0, 5]);
 
+    var depthScale = d3.scale.linear()
+    .domain([minValue,maxValue])
+    .range([0, 10]);
+
     // fill dataset in appropriate format
     series.forEach(function(item){ //
         // item example value ["USA", 70]
@@ -146,7 +163,8 @@ function createdataset(){
           fillColor: paletteScale(value), 
           country: country, 
           radius: radiusScale(value),
-          affinityValue: value
+          affinityValue: value,
+          depth: depthScale(value)
         }
 
     });
