@@ -18,6 +18,7 @@ $( document ).ready(function() {
     responsive: true,
     fills: { 
       defaultFill: 'lightgrey',
+      'bubblesfar': 'yellow', 
       'bubbles': 'yellow' 
     },
     geographyConfig: {
@@ -86,8 +87,8 @@ function create_bubbles(dataset){
       bubbleArray.push({
         'latitude': centrObj[d.country].lat,
         'longitude': centrObj[d.country].lng,
-        'radius' : 2,
-        'fillKey': 'bubbles',
+        'radius' : 1,
+        'fillKey': 'bubblesfar',
         'country': centrObj[d.country].fips,
         'countryLong': centrObj[d.country].country,
         'depth': d.depth
@@ -116,7 +117,8 @@ function drawLines(){
     // console.log(country1, star1X, star1Y, country2, star2X, star2Y);
     d3.select('.bubbles')
     .append("line")          // attach a line
-    .style("stroke", "black")  // colour the line
+    .style("stroke", "yellow")  // colour the line
+    .style("stroke-width", "2px")  // colour the line
     .attr("x1", star1X)     // x position of the first end of the line
     .attr("y1", star1Y)      // y position of the first end of the line
     .attr("x2", star2X)     // x position of the second end of the line
