@@ -50,9 +50,11 @@
   <!-- other signs -->
   <div class="othersigns" row center-center wrap>
     <% data.signs.sign.each do |s| %>
-      <div class="othersigns_item <%= s %>">
-        <%= load_svg(s) %>
-      </div>
+      <a href='<%= "/#{I18n.locale}/worldmap?sign=#{s}" %>'>
+        <div class="othersigns_item <%= s %>">
+          <%= load_svg(s) %>
+        </div>        
+      </a>
     <% end %>
   </div>
 </div>
@@ -73,11 +75,11 @@
     </div>
     <div class="info_right info_latitude" row between-center wide>
       <div class="label">latitude</div>
-      <div class="value" id="info_latitude"></div>
+      <div class="value" id="info_latitude">0</div>
     </div>
     <div class="info_right info_longitude"row between-center wide>
       <div class="label">longitude</div>
-      <div class="value" id="info_longitude"></div>
+      <div class="value" id="info_longitude">0</div>
     </div>
     <div class="info_right info_date" row between-center wide>
       <div class="label">date</div>
