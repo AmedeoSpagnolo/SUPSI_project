@@ -97,7 +97,7 @@ function create_bubbles(dataset){
     if (centrObj[d.country]){
     $('#country_list').append('<div class="country_text"><span id="'+ centrObj[d.country].fips +'T">'
          + centrObj[d.country].country +
-          '</span><div style="width:' + affinityScale(d.affinityValue) + 'px; height: 5px; opacity: 0.60; background-color: black;" id="'+ centrObj[d.country].fips +'C"></div></div>');
+          '</span><div style="width:' + (affinityScale(d.affinityValue) - 20) + 'px; height: 5px; opacity: 0.60; background-color: grey;" id="'+ centrObj[d.country].fips +'C"></div></div>');
     var id = '#' + centrObj[d.country].fips +'T'
     }   
   })
