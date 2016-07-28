@@ -4,7 +4,9 @@
 //= require moment
 //= require topojson
 //= require datamaps/dist/datamaps.world
+//= require lodash/dist/lodash
 
+//= require constellations
 //= require centroids
 //= require general
 //= require checkdate

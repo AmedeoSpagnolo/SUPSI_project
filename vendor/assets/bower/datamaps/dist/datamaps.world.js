@@ -205,7 +205,7 @@
       .append('g')
       .style('position', 'relative')
       .attr('class', 'place_group')
-      .attr('id', function(d) {
+      .attr('id', function(d) {        
         return d.id;
       })  
     // wolf.append('circle')

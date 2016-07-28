@@ -3,10 +3,6 @@ $( document ).ready(function() {
 
 $('#currentsign').html(app.sign)
 
-  //
-  // fake dataset
-  //
-
   var dataset = createdataset()
   console.log(dataset)
   // 
@@ -19,7 +15,7 @@ $('#currentsign').html(app.sign)
     responsive: true,
     fills: { 
       defaultFill: 'lightgrey',
-      'bubbles': 'yellow' 
+      'bubbles': 'red' 
     },
     geographyConfig: {
       borderWidth: 1,
@@ -36,6 +32,10 @@ $('#currentsign').html(app.sign)
      bubblesConfig: {
         borderWidth: 0,
         popupOnHover: true, // True to show the popup while hovering
+        fillOpacity: 1,
+        popupTemplate: function(geography, data) { // This function should just return a string
+          return '<div class="hoverinfo"><strong>' + data.country + '</strong></div>';
+        },
       }
 
 
@@ -45,39 +45,125 @@ $('#currentsign').html(app.sign)
     datamap.resize()
   })
 
-  datamap.bubbles(create_bubbles(dataset))
+  datamap.bubbles(create_bubbles(dataset));
+  drawLines()
 
-  d3.select('svg').append("line")          // attach a line
-    .style("stroke", "black")  // colour the line
-    .attr("x1", function(){
-        return $('#Mongolia').attr('cx')
-    })     // x position of the first end of the line
-    .attr("y1", function(){
-        return $('#Mongolia').attr('cy')
-    })      // y position of the first end of the line
-    .attr("x2", 300)     // x position of the second end of the line
-    .attr("y2", 150);    // y position of the second end of the line   
 })
 
+  var libra = [
+["Tonga",
+"Grenada"
+],[
+"Grenada",
+"Gambia"
+],[
+"Gambia",
+"Vatican"
+],[
+"Liechtenstein",
+"Vatican"
+],[
+"Vatican",
+"Macedonia"
+],[
+"Macedonia",
+"Greece"
+],[
+"Greece",
+"Iran"
+],[
+"Iran",
+"Nepal"
+],[
+"Nepal",
+"Sri Lanka"
+],[
+"Sri Lanka",
+"Nauru"
+]
+]
+var leo = [
+[
+"Venezuela",
+"Barbados"
+],[
+"Barbados",
+"Suriname"
+],[
+"Suriname",
+"Venezuela"
+],[
+"Suriname",
+"Mauritania"
+],[
+"Mauritania",
+"Lebanon"
+],[
+"Lebanon",
+"United Arab Emirates"
+],[
+"United Arab Emirates",
+"Kenya"
+],[
+"Lebanon",
+"Finland"
+],[
+"United Arab Emirates",
+"Bangladesh"
+,],[
+"Bangladesh",
+"Laos"
+],[
+"Bangladesh",
+"Mongolia"
+]
+]
+console.log('----' + app.sign + '---')
 var centrObj = {}
   centroids.forEach(function(c){
     centrObj[c.country] = c
 })
 function create_bubbles(dataset){
   var bubbleArray = [];
-  for (var d in dataset) {
-    bubbleArray.push({
-      'latitude': centrObj[dataset[d].country].lat,
-      'longitude': centrObj[dataset[d].country].lng,
-      'radius' : dataset[d].radius,
-      'fillKey': 'bubbles',
-      'country': dataset[d].country
-    })
-  }
+  var newdata = _.sortBy(dataset, function(d) { return d.affinityValue; });
+  var newdataDesc = _.reverse(newdata)
+  var i = 0
+  newdata.forEach(function(d) {
+    if (i <= 10){
+      bubbleArray.push({
+        'latitude': centrObj[d.country].lat,
+        'longitude': centrObj[d.country].lng,
+        'radius' : d.radius,
+        'fillKey': 'bubbles',
+        'country': centrObj[d.country].fips
+      })
+
+    }
+    i++
+  })
 
   return bubbleArray;
 }
 
+function drawLines(){
+  _.forEach(constellations[app.sign], function(l){
+    var country1 = '#' + centrObj[l[0]].fips
+    var country2 = '#' + centrObj[l[1]].fips
+    var star1X = $(country1).attr('cx')
+    var star1Y = $(country1).attr('cy')
+    var star2X = $(country2).attr('cx')
+    var star2Y = $(country2).attr('cy')   
+    console.log(country1, star1X, star1Y, country2, star2X, star2Y);
+    d3.select('.bubbles')
+    .append("line")          // attach a line
+    .style("stroke", "black")  // colour the line
+    .attr("x1", star1X)     // x position of the first end of the line
+    .attr("y1", star1Y)      // y position of the first end of the line
+    .attr("x2", star2X)     // x position of the second end of the line
+    .attr("y2", star2Y);    // y position of the second end of the line
+  });
+
+}
 
 function createdataset(){
     
@@ -105,9 +191,14 @@ function createdataset(){
             .domain([minValue,maxValue])
             .range(["#d3d3d3","#02386F"]); // blue color
 
-    var radiusScale = d3.scale.linear()
-            .domain([minValue,maxValue])
-            .range([1, 5]);
+    // var radiusScale = d3.scale.linear()
+    //         .domain([minValue,maxValue])
+    //         .range([1, 5]);
+    
+    var radiusScale = d3.scale.quantize()
+    .domain([minValue,maxValue])
+    .range([0, 5]);
+
     // fill dataset in appropriate format
     series.forEach(function(item){ //
         // item example value ["USA", 70]
@@ -119,7 +210,8 @@ function createdataset(){
           numberOfThings: value, 
           fillColor: paletteScale(value), 
           country: country, 
-          radius: radiusScale(value)
+          radius: radiusScale(value),
+          affinityValue: value
         }
 
     });
