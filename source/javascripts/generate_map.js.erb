@@ -37,7 +37,7 @@ $( document ).ready(function() {
         popupOnHover: true, // True to show the popup while hovering
         fillOpacity: 1,
         popupTemplate: function(geography, data) { // This function should just return a string
-          return '<div class="hoverinfo"><strong>' + data.country + '</strong></div>';
+          return '<div class="hoverinfo"><strong>' + data.countryLong + '</strong></div>';
         },
       }
 
@@ -65,13 +65,15 @@ function create_bubbles(dataset){
   var newdataDesc = _.reverse(newdata)
   var i = 0
   newdata.forEach(function(d) {
+    // console.log(d)
     if (i <= 10){
       bubbleArray.push({
         'latitude': centrObj[d.country].lat,
         'longitude': centrObj[d.country].lng,
         'radius' : d.radius,
         'fillKey': 'bubbles',
-        'country': centrObj[d.country].fips
+        'country': centrObj[d.country].fips,
+        'countryLong': centrObj[d.country].country
       })
 
     }

@@ -257,7 +257,7 @@ var constellations =  {
 ]
 ],
 // AQUARIUS
- acquarius: [
+ aquarius: [
 [
 "Nicaragua",
 "Portugal"

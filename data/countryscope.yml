@@ -555,11 +555,7 @@ countries:
       date: 'Sagittarius'
     - code: KAZ
       place: 'Kazakhstan'
-      date: 'Sagittarius'
-    - code: MAC
-      place: 'Macao'
-      date: 'Sagittarius'
-
+      date: 'Sagittarius'    
 cities:
   aries:
     - place: Guadalajara 
