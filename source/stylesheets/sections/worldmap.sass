@@ -6,7 +6,7 @@
   right: 0
   width: 100%
   height: 100%
-  background-color: lightgray
+  background-color: #34495e
   .map_container
     position: absolute
     width: 100%
@@ -18,3 +18,104 @@
         position: relative
     .place_group
       transform-origin: center center
+
+.tools
+  position: absolute
+  top: 1rem
+  width: 14rem
+  height: auto
+  bottom: 4rem
+  font-size: 20px
+  color: white
+  &.left
+    left: 1rem
+  &.right
+    right: 1rem
+  .info_current_sign
+    position: relative
+    display: flex
+    height: 100%
+    width: 100%
+    &:after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      background-color: white
+      opacity: .1
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+  .content_info_box
+    position: relative
+    height: 16rem
+    margin: 1rem 0
+    width: 100%
+    &:after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      background-color: white
+      opacity: .1
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+    svg
+      position: absolute
+      width: 100%
+      height: 100%
+  .currentsign
+    font-size: 30px
+    font-weight: bold
+    color: #d3d3d3
+  .othersigns
+    .othersigns_item
+      background-color: #a9b4bf
+      border-radius: 50%
+      width: 2rem
+      height: 2rem
+      margin: 8px 8px 0 0
+      padding: 4px
+      fill: #02386f
+  .info_position_general
+    width: 100%
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      background-color: white
+      opacity: .1
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+  .info_country_list
+    width: 100%
+    position: relative
+    display: flex
+    flex: 1
+    margin: 1rem 0
+    &:after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      background-color: white
+      opacity: .1
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+  .info_view_button
+    width: 100%
+    position: relative
+    .right_button
+      background-color: rgba(255, 255, 255, 0.24705882352941178)
+      width: 4rem
+      height: 2.5rem
+      position: relative

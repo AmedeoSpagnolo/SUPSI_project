@@ -13,7 +13,8 @@
 //= require birthinput
 //= require generate_map
 //= require horoscope
+//= require homepageanimation
 
-
-
+// data
 //= require everyplace
+//= require mouseposition
