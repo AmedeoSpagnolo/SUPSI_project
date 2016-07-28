@@ -23,7 +23,8 @@ $( document ).ready(function() {
     geographyConfig: {
       borderWidth: 1,
       borderColor: 'white',
-      highlightOnHover: false
+      highlightOnHover: false,
+      popupOnHover: false,
       // popupTemplate: function(geo, datamap) {
       //     if (!datamap) { return ; }
       //     return ['<div class="hoverinfo">',
@@ -51,6 +52,7 @@ $( document ).ready(function() {
   datamap.bubbles(create_bubbles(dataset));
   drawLines()
 
+  // _.forEach(a in $('.country_text'))
 })
 
  
@@ -63,6 +65,11 @@ function create_bubbles(dataset){
   var newdata = _.sortBy(dataset, function(d) { return d.affinityValue; });
   var newdataDesc = _.reverse(newdata);
   var i = 0;
+
+  var affinityScale = d3.scale.linear()
+    .domain([45, 95])
+    .range([0, $('.info_country_list').width()]);
+
   newdata.forEach(function(d) {
     if (i <= 10 && centrObj[d.country]){
       bubbleArray.push({
@@ -73,8 +80,7 @@ function create_bubbles(dataset){
         'country': centrObj[d.country].fips,
         'countryLong': centrObj[d.country].country,
         'depth': d.depth
-      });
-      $('#country_list').append('<div>' + centrObj[d.country].country + '</div>')
+      });                
     }
     else if (i > 10 && centrObj[d.country]){
       bubbleArray.push({
@@ -88,6 +94,12 @@ function create_bubbles(dataset){
       });
     }
     i++;
+    if (centrObj[d.country]){
+    $('#country_list').append('<div class="country_text"><span id="'+ centrObj[d.country].fips +'T">'
+         + centrObj[d.country].country +
+          '</span><div style="width:' + affinityScale(d.affinityValue) + 'px; height: 5px; opacity: 0.60; background-color: black;" id="'+ centrObj[d.country].fips +'C"></div></div>');
+    var id = '#' + centrObj[d.country].fips +'T'
+    }   
   })
 
   return bubbleArray;
@@ -114,6 +126,8 @@ function drawLines(){
 
 }
 
+var minValue = 0;
+var maxValue = 0;
 function createdataset(){
     
     var series = []
@@ -132,8 +146,8 @@ function createdataset(){
     var dataset = {};
 
     var onlyValues = series.map(function(obj){ return obj[1]; });
-    var minValue = Math.min.apply(null, onlyValues),
-        maxValue = Math.max.apply(null, onlyValues);
+    minValue = Math.min.apply(null, onlyValues);
+    maxValue = Math.max.apply(null, onlyValues);
     // create color palette function
     // color can be whatever you wish
     var paletteScale = d3.scale.linear()
