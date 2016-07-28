@@ -8,23 +8,352 @@
     <script src="/javascripts/main.js"></script>
   </head>
   <body class="en en_index">
-    <div class="home" column center-center>
+    <script type="text/javascript">
+    app.affinity['aries'] = {}
+      app.affinity['aries']['aries'] = '60'
+      app.affinity['aries']['taurus'] = '60'
+      app.affinity['aries']['gemini'] = '70'
+      app.affinity['aries']['cancer'] = '65'
+      app.affinity['aries']['leo'] = '90'
+      app.affinity['aries']['virgo'] = '45'
+      app.affinity['aries']['libra'] = '70'
+      app.affinity['aries']['scorpio'] = '80'
+      app.affinity['aries']['sagittarius'] = '90'
+      app.affinity['aries']['capricorn'] = '50'
+      app.affinity['aries']['aquarius'] = '55'
+      app.affinity['aries']['pisces'] = '65'
+    app.affinity['taurus'] = {}
+      app.affinity['taurus']['aries'] = '65'
+      app.affinity['taurus']['taurus'] = '70'
+      app.affinity['taurus']['gemini'] = '70'
+      app.affinity['taurus']['cancer'] = '80'
+      app.affinity['taurus']['leo'] = '70'
+      app.affinity['taurus']['virgo'] = '90'
+      app.affinity['taurus']['libra'] = '75'
+      app.affinity['taurus']['scorpio'] = '85'
+      app.affinity['taurus']['sagittarius'] = '50'
+      app.affinity['taurus']['capricorn'] = '95'
+      app.affinity['taurus']['aquarius'] = '80'
+      app.affinity['taurus']['pisces'] = '85'
+    app.affinity['gemini'] = {}
+      app.affinity['gemini']['aries'] = '65'
+      app.affinity['gemini']['taurus'] = '70'
+      app.affinity['gemini']['gemini'] = '75'
+      app.affinity['gemini']['cancer'] = '60'
+      app.affinity['gemini']['leo'] = '80'
+      app.affinity['gemini']['virgo'] = '75'
+      app.affinity['gemini']['libra'] = '90'
+      app.affinity['gemini']['scorpio'] = '60'
+      app.affinity['gemini']['sagittarius'] = '75'
+      app.affinity['gemini']['capricorn'] = '50'
+      app.affinity['gemini']['aquarius'] = '90'
+      app.affinity['gemini']['pisces'] = '50'
+    app.affinity['cancer'] = {}
+      app.affinity['cancer']['aries'] = '65'
+      app.affinity['cancer']['taurus'] = '80'
+      app.affinity['cancer']['gemini'] = '60'
+      app.affinity['cancer']['cancer'] = '75'
+      app.affinity['cancer']['leo'] = '70'
+      app.affinity['cancer']['virgo'] = '75'
+      app.affinity['cancer']['libra'] = '60'
+      app.affinity['cancer']['scorpio'] = '95'
+      app.affinity['cancer']['sagittarius'] = '55'
+      app.affinity['cancer']['capricorn'] = '45'
+      app.affinity['cancer']['aquarius'] = '70'
+      app.affinity['cancer']['pisces'] = '90'
+    app.affinity['leo'] = {}
+      app.affinity['leo']['aries'] = '90'
+      app.affinity['leo']['taurus'] = '70'
+      app.affinity['leo']['gemini'] = '80'
+      app.affinity['leo']['cancer'] = '70'
+      app.affinity['leo']['leo'] = '85'
+      app.affinity['leo']['virgo'] = '75'
+      app.affinity['leo']['libra'] = '65'
+      app.affinity['leo']['scorpio'] = '75'
+      app.affinity['leo']['sagittarius'] = '95'
+      app.affinity['leo']['capricorn'] = '45'
+      app.affinity['leo']['aquarius'] = '70'
+      app.affinity['leo']['pisces'] = '75'
+    app.affinity['virgo'] = {}
+      app.affinity['virgo']['aries'] = '45'
+      app.affinity['virgo']['taurus'] = '90'
+      app.affinity['virgo']['gemini'] = '75'
+      app.affinity['virgo']['cancer'] = '75'
+      app.affinity['virgo']['leo'] = '75'
+      app.affinity['virgo']['virgo'] = '70'
+      app.affinity['virgo']['libra'] = '80'
+      app.affinity['virgo']['scorpio'] = '85'
+      app.affinity['virgo']['sagittarius'] = '70'
+      app.affinity['virgo']['capricorn'] = '95'
+      app.affinity['virgo']['aquarius'] = '50'
+      app.affinity['virgo']['pisces'] = '70'
+    app.affinity['libra'] = {}
+      app.affinity['libra']['aries'] = '70'
+      app.affinity['libra']['taurus'] = '75'
+      app.affinity['libra']['gemini'] = '90'
+      app.affinity['libra']['cancer'] = '60'
+      app.affinity['libra']['leo'] = '65'
+      app.affinity['libra']['virgo'] = '80'
+      app.affinity['libra']['libra'] = '80'
+      app.affinity['libra']['scorpio'] = '85'
+      app.affinity['libra']['sagittarius'] = '80'
+      app.affinity['libra']['capricorn'] = '85'
+      app.affinity['libra']['aquarius'] = '95'
+      app.affinity['libra']['pisces'] = '50'
+    app.affinity['scorpio'] = {}
+      app.affinity['scorpio']['aries'] = '80'
+      app.affinity['scorpio']['taurus'] = '85'
+      app.affinity['scorpio']['gemini'] = '60'
+      app.affinity['scorpio']['cancer'] = '95'
+      app.affinity['scorpio']['leo'] = '75'
+      app.affinity['scorpio']['virgo'] = '85'
+      app.affinity['scorpio']['libra'] = '85'
+      app.affinity['scorpio']['scorpio'] = '90'
+      app.affinity['scorpio']['sagittarius'] = '85'
+      app.affinity['scorpio']['capricorn'] = '65'
+      app.affinity['scorpio']['aquarius'] = '60'
+      app.affinity['scorpio']['pisces'] = '95'
+    app.affinity['sagittarius'] = {}
+      app.affinity['sagittarius']['aries'] = '90'
+      app.affinity['sagittarius']['taurus'] = '50'
+      app.affinity['sagittarius']['gemini'] = '75'
+      app.affinity['sagittarius']['cancer'] = '55'
+      app.affinity['sagittarius']['leo'] = '95'
+      app.affinity['sagittarius']['virgo'] = '70'
+      app.affinity['sagittarius']['libra'] = '80'
+      app.affinity['sagittarius']['scorpio'] = '80'
+      app.affinity['sagittarius']['sagittarius'] = '85'
+      app.affinity['sagittarius']['capricorn'] = '55'
+      app.affinity['sagittarius']['aquarius'] = '60'
+      app.affinity['sagittarius']['pisces'] = '75'
+    app.affinity['capricorn'] = {}
+      app.affinity['capricorn']['aries'] = '50'
+      app.affinity['capricorn']['taurus'] = '95'
+      app.affinity['capricorn']['gemini'] = '50'
+      app.affinity['capricorn']['cancer'] = '45'
+      app.affinity['capricorn']['leo'] = '45'
+      app.affinity['capricorn']['virgo'] = '95'
+      app.affinity['capricorn']['libra'] = '85'
+      app.affinity['capricorn']['scorpio'] = '65'
+      app.affinity['capricorn']['sagittarius'] = '55'
+      app.affinity['capricorn']['capricorn'] = '85'
+      app.affinity['capricorn']['aquarius'] = '70'
+      app.affinity['capricorn']['pisces'] = '85'
+    app.affinity['aquarius'] = {}
+      app.affinity['aquarius']['aries'] = '55'
+      app.affinity['aquarius']['taurus'] = '80'
+      app.affinity['aquarius']['gemini'] = '90'
+      app.affinity['aquarius']['cancer'] = '70'
+      app.affinity['aquarius']['leo'] = '70'
+      app.affinity['aquarius']['virgo'] = '50'
+      app.affinity['aquarius']['libra'] = '95'
+      app.affinity['aquarius']['scorpio'] = '60'
+      app.affinity['aquarius']['sagittarius'] = '60'
+      app.affinity['aquarius']['capricorn'] = '70'
+      app.affinity['aquarius']['aquarius'] = '80'
+      app.affinity['aquarius']['pisces'] = '55'
+    app.affinity['pisces'] = {}
+      app.affinity['pisces']['aries'] = '65'
+      app.affinity['pisces']['taurus'] = '85'
+      app.affinity['pisces']['gemini'] = '50'
+      app.affinity['pisces']['cancer'] = '90'
+      app.affinity['pisces']['leo'] = '75'
+      app.affinity['pisces']['virgo'] = '70'
+      app.affinity['pisces']['libra'] = '50'
+      app.affinity['pisces']['scorpio'] = '95'
+      app.affinity['pisces']['sagittarius'] = '75'
+      app.affinity['pisces']['capricorn'] = '85'
+      app.affinity['pisces']['aquarius'] = '55'
+      app.affinity['pisces']['pisces'] = '80'
+</script>
+
+<div class="home" column center-center>
   <div class="wrap">
-    <div class="lable" center center-center>
-      <div>
-        <span>Countries doesn't define identity any more, stars do.<br>My star sign is</span>
-        <span class="birth_input" id="sign">your start sign</span>
+    <div class="lable" column center-center>
+      <div class="logo_wrap">
+        <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="131.4px" height="131.4px" viewBox="0 0 131.4 131.4" style="enable-background:new 0 0 131.4 131.4;" xml:space="preserve"
+	>
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#666666;}
+	.st2{fill:#F2F2F2;}
+	.st3{opacity:0.4;fill:none;stroke:#F2F2F2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#FFFFFF;stroke-width:7;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st8{fill:none;stroke:#FFFFFF;stroke-width:0.7716;stroke-miterlimit:10;}
+	.st9{fill:#F68200;}
+	.st10{fill:none;stroke:#FFFFFF;stroke-width:1.151;stroke-miterlimit:10;}
+	.st11{fill:none;stroke:#FFFFFF;stroke-width:1.0082;stroke-miterlimit:10;}
+	.st12{fill:none;stroke:#FFFFFF;stroke-width:0.5633;stroke-miterlimit:10;}
+	.st13{fill:none;stroke:#FFFFFF;stroke-width:0.2716;stroke-miterlimit:10;}
+	.st14{fill:none;stroke:#FFFFFF;stroke-width:0.272;stroke-miterlimit:10;}
+	.st15{fill:none;stroke:#FFFFFF;stroke-width:6;stroke-miterlimit:10;}
+	.st16{fill:#808080;}
+	.st17{fill:none;stroke:#000000;stroke-width:0.4769;stroke-miterlimit:10;}
+	.st18{fill:none;stroke:#FFFFFF;stroke-width:0.4769;stroke-miterlimit:10;}
+	.st19{fill:#001382;}
+	.st20{fill:none;stroke:#808080;stroke-miterlimit:10;}
+	.st21{fill:none;stroke:#808080;stroke-linecap:round;stroke-miterlimit:10;}
+</style>
+<g>
+	<rect x="3.1" y="60.4" transform="matrix(0.9567 -0.2909 0.2909 0.9567 -16.9287 7.9816)" class="st0" width="30.6" height="1"/>
+</g>
+<g>
+	<rect x="14.5" y="94.6" transform="matrix(0.5909 -0.8067 0.8067 0.5909 -63.5994 64.7456)" class="st0" width="35.1" height="1"/>
+</g>
+<g>
+	<circle class="st0" cx="127.6" cy="66" r="3.8"/>
+</g>
+<g>
+	<circle class="st0" cx="106.3" cy="76" r="3.8"/>
+</g>
+<g>
+	<circle class="st0" cx="65.7" cy="66" r="3.8"/>
+</g>
+<g>
+	<circle class="st0" cx="59.4" cy="25" r="3.8"/>
+</g>
+<g>
+	<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -16.7393 49.5229)" class="st0" cx="51.4" cy="45" rx="3.8" ry="3.8"/>
+</g>
+<g>
+	<circle class="st0" cx="33" cy="56.4" r="3.8"/>
+</g>
+<g>
+	<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -44.9481 53.3852)" class="st0" cx="42" cy="80.9" rx="3.8" ry="3.8"/>
+</g>
+<g>
+	<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -55.207 77.502)" class="st0" cx="65.9" cy="105.4" rx="3.8" ry="3.8"/>
+</g>
+<g>
+	<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 16.4924 84.0389)" class="st0" cx="109.7" cy="22.1" rx="3.8" ry="3.8"/>
+</g>
+<g>
+	<circle class="st0" cx="65.5" cy="3.8" r="3.8"/>
+</g>
+<g>
+	<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -8.8461 21.9818)" class="st0" cx="22.1" cy="21.7" rx="3.8" ry="3.8"/>
+</g>
+<g>
+	<circle class="st0" cx="3.8" cy="65.4" r="3.8"/>
+</g>
+<g>
+	<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -70.9034 47.3204)" class="st0" cx="21.7" cy="109.2" rx="3.8" ry="3.8"/>
+</g>
+<g>
+	<circle class="st0" cx="65.4" cy="127.6" r="3.8"/>
+</g>
+<g>
+	
+		<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -45.5647 109.3778)" class="st0" cx="109.2" cy="109.7" rx="3.8" ry="3.8"/>
+</g>
+<g>
+	<polygon class="st0" points="41.5,81.1 32.4,56.2 51,44.6 58.9,24.8 59.8,25.2 51.8,45.3 33.6,56.6 42.4,80.8 	"/>
+</g>
+<g>
+	<path class="st0" d="M106.8,77.5l-21-32.2l24.5-24.5L106.8,77.5z M87,45.5l18.9,29l3.2-51.1L87,45.5z"/>
+</g>
+<g>
+	<path class="st0" d="M65.4,128.1l-44.1-18.5L3.2,65.4l18.5-44.1l0.2-0.1l43.5-18l0.2,0.1l44.4,18.4l0.1,0.2l18,44.1l-18.5,44.1
+		L65.4,128.1z M22.1,108.9l43.3,18.2l43.5-17.8L127.1,66l-17.8-43.5L65.5,4.3l-43,17.8L4.3,65.4L22.1,108.9z"/>
+</g>
+<g>
+	<polygon class="st0" points="108.8,109.7 105.9,76.9 65.9,106.1 41.6,80.8 65,65.8 51,45.2 51.8,44.7 66.4,66.1 43.2,81 66,104.7 
+		106.8,75.1 109.7,109.6 	"/>
+</g>
+<g>
+	<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -6.806 74.3885)" class="st9" cx="86.4" cy="45.4" rx="3.8" ry="3.8"/>
+</g>
+</svg>
+
       </div>
-      <div class="oroscope" id="oroscope">
-        <span>you believe a place that ..</span>
-        <div id="oroscope_content"></div>
-        <span class="link_to_map">
-          <a href="/en/worldmap">check out your place on the map</a>
-          </span>
+      <div>
+        <span>
+          No matter where you were born,<br>only the stars define where you belong.<br>All the
+        </span>
+        <span class="star_input">
+          <span class="sign" id="sign">star signs</span>
+          <div class="modal" id="modal" column start-center>
+            <div class="star_selection" selection="aries">
+              aries
+            </div>
+            <div class="star_selection" selection="taurus">
+              taurus
+            </div>
+            <div class="star_selection" selection="gemini">
+              gemini
+            </div>
+            <div class="star_selection" selection="cancer">
+              cancer
+            </div>
+            <div class="star_selection" selection="leo">
+              leo
+            </div>
+            <div class="star_selection" selection="virgo">
+              virgo
+            </div>
+            <div class="star_selection" selection="libra">
+              libra
+            </div>
+            <div class="star_selection" selection="scorpio">
+              scorpio
+            </div>
+            <div class="star_selection" selection="sagittarius">
+              sagittarius
+            </div>
+            <div class="star_selection" selection="capricorn">
+              capricorn
+            </div>
+            <div class="star_selection" selection="aquarius">
+              aquarius
+            </div>
+            <div class="star_selection" selection="pisces">
+              pisces
+            </div>
+          </div>
+        </span>
+        <span>
+          share a place in the world.
+        </span>
+      </div>
+      <div class="link_wrap" id="link_wrap">
+        <a id="link_to_second_page" href="">
+          <div class="calltoaction">Find it on the map ></div>
+        </a>
+        <div class="hover_effect"></div>
+        <div class="hover_bg"></div>
       </div>
     </div>
   </div>
+  <div class="bg_hover" id="bg_hover"></div>
 </div>
+
+<div class="home_animation">
+  <canvas id="canvas"></canvas>
+</div>
+
+<div class="footer" row between-center>
+  <div row center-center>
+    <div class="logo" row center-center>
+      IDENTISIGN
+    </div>
+    <div class="footer_button about" row center-center>
+      about 
+    </div>
+    <div class="footer_button source" row center-center>
+      source
+    </div>
+  </div>
+  <div class="footer_button credits" row center-center>
+    credits
+  </div>
+</div>
+
 
   </body>
 </html>
