@@ -49,9 +49,38 @@
       bottom: 0
   .content_info_box
     position: relative
-    height: 16rem
+    height: 24rem
     margin: 1rem 0
     width: 100%
+    .radarchart_lable
+      position: absolute
+      text-transform: uppercase
+      font-size: 12px
+      letter-spacing: 3px
+      &.radar_Happiness
+        top: 0
+        left: 50%
+        transform: translate(-50%,-50%)
+      &.radar_Relationships
+        right: 0
+        top: 50%
+        transform-origin: 50% 50%
+        transform: translate(50%, 0) rotate(90deg)
+      &.radar_Hardness
+        bottom: 0
+        left: 50%
+        transform: translate(-50%,50%)
+      &.radar_Interested
+        left: 0
+        top: 50%
+        transform-origin: 50% 50%
+        transform: translate(-50%, 0) rotate(90deg)
+    .radarChart
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
     &:after
       content: ''
       position: absolute

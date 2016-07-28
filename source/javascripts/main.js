@@ -16,6 +16,7 @@
 //= require horoscope
 //= require homepageanimation
 //= require modalpassport
+//= require radarchart
 
 // data
 //= require everyplace

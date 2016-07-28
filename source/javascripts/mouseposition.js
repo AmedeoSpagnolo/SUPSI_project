@@ -12,7 +12,7 @@ $(document).ready(function(){
 
       var valueprop = ($(this).attr('depth') * 5) + 0.1
       var norm = 1 / valueprop
-      console.log(norm)
+      // console.log(norm)
       // $(this).css("transform", "translate("+(mx * norm)+"px,"+(my * norm)+"px)")
     })
     
