@@ -18,3 +18,4 @@
 // data
 //= require everyplace
 //= require mouseposition
+//= require leftinfo

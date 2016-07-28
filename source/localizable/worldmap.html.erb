@@ -23,7 +23,7 @@
     <div>    
       <div id="currentsign" class="currentsign"></div>
       <div id="currentsign_svg" class="currentsign_svg"></div>
-      <div class="time_range" id="time_range">time range</div>
+      <div class="time_range" id="time_range"><%= csv_data('Star_signs_table')[:date][:leo]%></div>
       <div class="keywords strong">
         <div class="label">Strength Keywords</div>
         <div class="list" column start-start>lista</div>
@@ -57,39 +57,31 @@
   <div class="info_position_general" column start-start>
     <div class="info_right info_ip" id="info_ip" row between-center wide>
       <div class="label">ip</div>
-      <div class="value" id="info_ip">000</div>
+      <div class="value" id="info_ip">127.0.0.1</div>
     </div>
-    <div class="info_right info_location" id="info_location" row between-center wide>
+    <div class="info_right info_location" row between-center wide>
       <div class="label">location</div>
-      <div class="value" id="info_location">000</div>
+      <div class="value" id="info_location">Lugano.Switzerland</div>
     </div>
-    <div class="info_right info_latitude" id="info_latitude" row between-center wide>
+    <div class="info_right info_latitude" row between-center wide>
       <div class="label">latitude</div>
-      <div class="value" id="info_latitude">000</div>
+      <div class="value" id="info_latitude"></div>
     </div>
-    <div class="info_right info_longitude" id="info_longitude" row between-center wide>
+    <div class="info_right info_longitude"row between-center wide>
       <div class="label">longitud</div>
-      <div class="value" id="info_longitude">000</div>
+      <div class="value" id="info_longitude">-</div>
     </div>
-    <div class="info_right info_date" id="info_date" row between-center wide>
+    <div class="info_right info_date" row between-center wide>
       <div class="label">date</div>
-      <div class="value" id="info_date">000</div>
+      <div class="value" id="info_date">-</div>
     </div>
-    <div class="info_right info_time" id="info_time" row between-center wide>
-      <div class="label">time</div>
-      <div class="value" id="info_time">000</div>
-    </div>
-    <div class="info_right info_day" id="info_day" row between-center wide>
-      <div class="label">da</div>
-      <div class="value" id="info_day">000</div>
-    </div>
-    <div class="info_right info_temp" id="info_temp" row between-center wide>
+    <div class="info_right info_temp" row between-center wide>
       <div class="label">temp</div>
-      <div class="value" id="info_temp">000</div>
+      <div class="value" id="info_temp">-</div>
     </div>
-    <div class="info_right info_weather" id="info_weather" row between-center wide>
-      <div class="label">weathe</div>
-      <div class="value" id="info_weather">000</div>
+    <div class="info_right info_weather" row between-center wide>
+      <div class="label">weather</div>
+      <div class="value" id="info_weather">-</div>
     </div>
   </div>
 
