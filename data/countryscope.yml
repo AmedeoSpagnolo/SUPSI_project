@@ -302,9 +302,6 @@ countries:
     - code: IMN
       place: 'Isle of Man'
       date: 'Cancer'
-    - code: MAF
-      place: 'Saint Martin (French part)'
-      date: 'Cancer'
     - code: MNP
       place: 'Northern Mariana Islands'
       date: 'Cancer'
@@ -510,9 +507,6 @@ countries:
     - code: ASM
       place: 'American Samoa'
       date: 'Scorpio'
-    - code: SXM
-      place: 'Sint Maarten (Dutch part)'
-      date: 'Scorpio'
     - code: TCA
       place: 'Turks and Caicos Islands'
       date: 'Scorpio'
@@ -549,9 +543,6 @@ countries:
       date: 'Sagittarius'
     - code: FSM
       place: 'Micronesia, Federated States of'
-      date: 'Sagittarius'
-    - code: HKG
-      place: 'Hong Kong'
       date: 'Sagittarius'
     - code: KAZ
       place: 'Kazakhstan'
