@@ -12,3 +12,7 @@ sign:
   - "aquarius"
   - "pisces"
   
+icon: 
+  - "SpaceBtn"
+  - "ShareBtn"  
+  - "DownloadBtn"  

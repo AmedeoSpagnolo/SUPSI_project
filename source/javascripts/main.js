@@ -15,6 +15,7 @@
 //= require generate_map
 //= require horoscope
 //= require homepageanimation
+//= require modalpassport
 
 // data
 //= require everyplace
