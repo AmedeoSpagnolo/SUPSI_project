@@ -8,8 +8,13 @@ $(document).ready(function(){
     $('#info_latitude').html(parseInt(mx,10))
     $('#info_longitude').html(parseInt(my,10))
 
-    var norm = 1 / 70
-    // $('.datamaps-bubble').css("transform", "translate("+(mx * norm)+"px,"+(my * norm)+"px)")
+    $("[depth]").each(function(){
+
+      var valueprop = ($(this).attr('depth') * 5) + 0.1
+      var norm = 1 / valueprop
+      // console.log(norm)
+      // $(this).css("transform", "translate("+(mx * norm)+"px,"+(my * norm)+"px)")
+    })
     
    })
 });
