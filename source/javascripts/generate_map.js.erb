@@ -22,7 +22,7 @@ $( document ).ready(function() {
     },
     geographyConfig: {
       borderWidth: 1,
-      borderColor: 'white',
+      borderColor: '#484848',
       highlightOnHover: false,
       popupOnHover: false,
       // popupTemplate: function(geo, datamap) {
@@ -152,7 +152,7 @@ function createdataset(){
     // color can be whatever you wish
     var paletteScale = d3.scale.linear()
             .domain([minValue,maxValue])
-            .range(["#d3d3d3","#02386F"]); // blue color
+            .range(["rgba(211, 211, 211, .3)","#02386F"]); // blue color
 
     // var radiusScale = d3.scale.linear()
     //         .domain([minValue,maxValue])
