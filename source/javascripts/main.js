@@ -5,6 +5,7 @@
 //= require topojson
 //= require datamaps/dist/datamaps.world
 //= require lodash/dist/lodash
+//= require simpleWeather
 
 //= require constellations
 //= require centroids

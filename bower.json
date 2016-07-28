@@ -21,6 +21,7 @@
     "jquery": "~3.0.0",
     "moment": "^2.14.1",
     "datamaps": "^0.5.7",
-    "lodash": "^4.14.0"
+    "lodash": "^4.14.0",
+    "simpleWeather": "^3.1.0"
   }
 }
