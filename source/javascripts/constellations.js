@@ -1,11 +1,11 @@
 //LIBRA
 var constellations =  {
 	libra: [
-["Tonga",
-"Grenada"
+["French Polynesia",
+"Liechtenstein"
 ],[
-"Gambia",
-"Vatican"
+"Grenada",
+"Gambia"
 ],[
 "Liechtenstein",
 "Vatican"
@@ -14,9 +14,15 @@ var constellations =  {
 "Macedonia"
 ],[
 "Macedonia",
-"Greece"
+"Serbia"
 ],[
-"Greece",
+"Serbia",
+"Liechtenstein"
+],[
+"Serbia",
+"Lithuania"
+],[
+"Macedonia",
 "Iran"
 ],[
 "Iran",
@@ -27,6 +33,9 @@ var constellations =  {
 ],[
 "Sri Lanka",
 "Nauru"
+],[
+"Sri Lanka",
+"Heard Island and McDonald Islands"
 ]
 ],
 // GEMINI

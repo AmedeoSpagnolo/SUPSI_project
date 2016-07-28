@@ -53,74 +53,7 @@ $( document ).ready(function() {
 
 })
 
-  var libra = [
-["Tonga",
-"Grenada"
-],[
-"Grenada",
-"Gambia"
-],[
-"Gambia",
-"Vatican"
-],[
-"Liechtenstein",
-"Vatican"
-],[
-"Vatican",
-"Macedonia"
-],[
-"Macedonia",
-"Greece"
-],[
-"Greece",
-"Iran"
-],[
-"Iran",
-"Nepal"
-],[
-"Nepal",
-"Sri Lanka"
-],[
-"Sri Lanka",
-"Nauru"
-]
-]
-var leo = [
-[
-"Venezuela",
-"Barbados"
-],[
-"Barbados",
-"Suriname"
-],[
-"Suriname",
-"Venezuela"
-],[
-"Suriname",
-"Mauritania"
-],[
-"Mauritania",
-"Lebanon"
-],[
-"Lebanon",
-"United Arab Emirates"
-],[
-"United Arab Emirates",
-"Kenya"
-],[
-"Lebanon",
-"Finland"
-],[
-"United Arab Emirates",
-"Bangladesh"
-,],[
-"Bangladesh",
-"Laos"
-],[
-"Bangladesh",
-"Mongolia"
-]
-]
+ 
 console.log('----' + app.sign + '---')
 var centrObj = {}
   centroids.forEach(function(c){
@@ -150,13 +83,14 @@ function create_bubbles(dataset){
 
 function drawLines(){
   _.forEach(constellations[app.sign], function(l){
+    console.log(l)
     var country1 = '#' + centrObj[l[0]].fips
     var country2 = '#' + centrObj[l[1]].fips
     var star1X = $(country1).attr('cx')
     var star1Y = $(country1).attr('cy')
     var star2X = $(country2).attr('cx')
     var star2Y = $(country2).attr('cy')   
-    console.log(country1, star1X, star1Y, country2, star2X, star2Y);
+    // console.log(country1, star1X, star1Y, country2, star2X, star2Y);
     d3.select('.bubbles')
     .append("line")          // attach a line
     .style("stroke", "black")  // colour the line
