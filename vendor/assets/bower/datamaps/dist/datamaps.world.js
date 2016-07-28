@@ -517,6 +517,9 @@
         .attr('id', function(datum){
           return datum.country;
         })
+        .attr('depth', function(datum){
+          return datum.depth
+        })
         .attr('cx', function ( datum ) {
           var latLng;
           if ( datumHasCoords(datum) ) {
