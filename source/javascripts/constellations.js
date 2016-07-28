@@ -44,23 +44,26 @@ var constellations =  {
 "Nicaragua",
 "Guinea"
 ],[
-"Guinea",
+"Guinea-Bissau",
 "Portugal"
 ],[
 "Portugal",
-"France"
+"Faroe Islands"
 ],[
-"Guinea",
+"Guinea-Bissau",
 "Nigeria"
 ],[
 "Nigeria",
 "Uganda"
 ],[
+"Nigeria",
+"Saint Helena, Ascension and Tristan da Cunha"
+],[
 "Uganda",
 "Swaziland"
 ],[
 "Swaziland",
-"Lesotho"
+"Saint Helena, Ascension and Tristan da Cunha"
 ],[
 "Uganda",
 "Saudi Arabia"
@@ -69,6 +72,9 @@ var constellations =  {
 "Syria"
 ],[
 "Saudi Arabia",
+"Palau"
+],[
+"Palau",
 "Tuvalu"
 ]
 ],
@@ -172,7 +178,7 @@ var constellations =  {
 "Equatorial Guinea",
 "Zambia"
 ],[
-"Zambia ",
+"Zambia",
 "South Africa"
 ],[
 "Equatorial Guinea",
@@ -185,37 +191,40 @@ var constellations =  {
 // CAPRICORN
  capricorn: [
 [
-"Mexico",
-"Costa Rica"
-],[
-"Costa Rica",
-"Saint Kitts and Nevis"
-],[
 "Saint Kitts and Nevis",
 "Trinidad and Tobago"
 ],[
 "Trinidad and Tobago",
-"Costa Rica"
-],[
-"Costa Rica",
 "Uruguay"
 ],[
-"Trinidad and Tobago",
-"Mali"
+"Uruguay",
+"Gibraltar"
 ],[
-"Mali",
-"Malta"
+"Gibraltar",
+"Andorra"
 ],[
-"Malta",
+"Andorra",
 "Switzerland"
 ],[
-"Malta",
+"Switzerland",
 "Qatar"
 ],[
 "Qatar",
-"Malaysia"
+"Gibraltar"
 ],[
-"Malaysia",
+"Switzerland",
+"Moldova, Republic of"
+],[
+"Moldova, Republic of",
+"Ukraine"
+],[
+"Qatar",
+"Kyrgyzstan"
+],[
+"Switzerland",
+"Moldova, Republic of"
+],[
+"Kyrgyzstan",
 "Papua New Guinea"
 ]],
 // SAGITTARIUS
@@ -223,34 +232,34 @@ var constellations =  {
  sagittarius: [
 [
 "Peru",
-"Jamaica"
+"Cayman Islands"
 ],[
-"Jamaica",
-"Puerto Rico"
+"Cayman Islands",
+"Anguilla"
 ],[
-"Puerto Rico",
-"Liberia"
+"Cook Islands",
+"Cayman Islands"
 ],[
-"Liberia",
+"Anguilla",
+"Peru"
+],[
+"Anguilla",
 "Senegal"
 ],[
 "Senegal",
-"Niger"
+"Burkina Faso"
 ],[
-"Niger",
-"Liberia"
-],[
-"Niger",
+"Burkina Faso",
 "Tunisia"
 ],[
 "Tunisia",
-"Pakistan"
+"British Indian Ocean Territory"
 ],[
-"Pakistan",
-"Maldives"
-],[
-"Maldives",
+"British Indian Ocean Territory",
 "Singapore"
+],[
+"Singapore",
+"South Korea"
 ],[
 "Singapore",
 "Vanuatu"
@@ -335,37 +344,34 @@ var constellations =  {
  taurus:[
 [
 "Samoa",
-"El Salvador"
-],[
-"El Salvador",
-"Cuba"
-],[
-"Cuba",
-"Haiti"
-],[
-"Haiti",
-"Cameroon"
-],[
-"Cameroon",
-"Sudan"
-],[
-"Sudan",
 "Libya"
 ],[
 "Libya",
-"Cameroon"
+"Sudan"
 ],[
-"Lybia",
+"Libya",
+"Slovenia"
+],[
+"Slovenia",
+"United Kingdom"
+],[
+"Slovenia",
 "Romania"
 ],[
 "Romania",
 "Poland"
 ],[
-"Poland",
-"United Kingdom"
+"Sudan",
+"Myanmar"
+],[
+"Myanmar",
+"Brunei Darussalam"
+],[
+"Brunei Darussalam",
+"Indonesia"
 ],[
 "Romania",
-"Indonesia"
+"Slovakia"
 ]
 ],
 // SCORPIO

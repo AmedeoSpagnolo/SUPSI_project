@@ -59,13 +59,14 @@ var centrObj = {}
     centrObj[c.country] = c
 })
 function create_bubbles(dataset){
+  console.log(dataset);
   var bubbleArray = [];
   var newdata = _.sortBy(dataset, function(d) { return d.affinityValue; });
-  var newdataDesc = _.reverse(newdata)
-  var i = 0
+  var newdataDesc = _.reverse(newdata);
+  var i = 0;
   newdata.forEach(function(d) {
-    // console.log(d)
-    if (i <= 10){
+    console.log(d);
+    if (i <= 10 && centrObj[d.country]){
       bubbleArray.push({
         'latitude': centrObj[d.country].lat,
         'longitude': centrObj[d.country].lng,
@@ -73,10 +74,9 @@ function create_bubbles(dataset){
         'fillKey': 'bubbles',
         'country': centrObj[d.country].fips,
         'countryLong': centrObj[d.country].country
-      })
-
+      });
     }
-    i++
+    i++;
   })
 
   return bubbleArray;
@@ -84,7 +84,7 @@ function create_bubbles(dataset){
 
 function drawLines(){
   _.forEach(constellations[app.sign], function(l){
-    console.log(l)
+    console.log(l);
     var country1 = '#' + centrObj[l[0]].fips
     var country2 = '#' + centrObj[l[1]].fips
     var star1X = $(country1).attr('cx')
