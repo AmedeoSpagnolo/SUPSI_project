@@ -4,6 +4,21 @@
   // Save off default references
   var d3 = window.d3, topojson = window.topojson;
 
+  d3.selection.prototype.moveToFront = function() {
+      console.log('HERE');
+      return this.each(function() {
+          this.parentNode.appendChild(this);
+      });
+  };
+  d3.selection.prototype.moveToBack = function() {
+      return this.each(function() {
+          var firstChild = this.parentNode.firstChild;
+          if (firstChild) {
+              this.parentNode.insertBefore(this, firstChild);
+          }
+      });
+  };
+
   var defaultOptions = {
     scope: 'world',
     responsive: false,
@@ -513,13 +528,16 @@
     bubbles
       .enter()
         .append('svg:circle')
+        .on('mouseover', function() {
+            d3.select(this).moveToFront();
+        })
         .attr('class', 'datamaps-bubble')
         .attr('id', function(datum){
           return datum.country;
         })
         .attr('depth', function(datum){
           return datum.depth
-        })
+        })        
         .attr('cx', function ( datum ) {
           var latLng;
           if ( datumHasCoords(datum) ) {
@@ -548,6 +566,19 @@
           }
           if ( latLng ) return latLng[1];
         })
+        .on('click', function(){
+          if (!app.oneSelected){
+            app.line.x1 = d3.select(this).attr("cx");
+            app.line.y1 = d3.select(this).attr("cy"); 
+            app.oneSelected = true;
+          }
+          else{
+            app.line.x2 = d3.select(this).attr("cx");
+            app.line.y2 = d3.select(this).attr("cy");
+            app.oneSelected = false;
+            drawLine();
+          }
+        })        
         .attr('r', function(datum) {
           // If animation enabled start with radius 0, otherwise use full size.
           return options.animate ? 0 : val(datum.radius, options.radius, datum);

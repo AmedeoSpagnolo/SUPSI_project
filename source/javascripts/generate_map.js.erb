@@ -51,7 +51,7 @@ $( document ).ready(function() {
   })
 
   datamap.bubbles(create_bubbles(dataset));
-  drawLines()
+  // drawLines()
 
   // _.forEach(a in $('.country_text'))
 })
@@ -125,7 +125,6 @@ function drawLines(){
     .attr("y2", star2Y)    // y position of the second end of the line
     .attr("depth", 10);
   });
-
 }
 
 var minValue = 0;

@@ -32,7 +32,7 @@ activate :i18n, :mount_at_root => false
 
 # Reload the browser automatically whenever files change
 configure :development do
-  activate :livereload
+  # activate :livereload
 end
 
 # build

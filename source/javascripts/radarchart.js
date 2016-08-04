@@ -1,4 +1,3 @@
-console.log('asdadasd')
 
 /////////////////////////////////////////////////////////
 /////////////// The Radar Chart Function ////////////////
@@ -8,7 +7,6 @@ console.log('asdadasd')
 /////////////////////////////////////////////////////////
 
 function RadarChart(id, data, options) {
-  console.log(id, data, options)
   var cfg = {
    w: "100%",        //Width of the circle
    h: "100%",        //Height of the circle
@@ -24,9 +22,7 @@ function RadarChart(id, data, options) {
    roundStrokes: false, //If true the area and stroke will follow a round path (cardinal-closed)
    color: d3.scale.category10() //Color function
   };
-    
-    console.log(data)
-  
+      
   //Put all of the options into a variable called cfg
   if('undefined' !== typeof options){
     for(var i in options){
